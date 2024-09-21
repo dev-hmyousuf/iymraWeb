@@ -27,7 +27,7 @@ const Yousuf = () => {
                       </a>
                     </div>
                     <div className="w-full sm:w-1/3">
-                      <a className="flex justify-center items-center h-full py-6 bg-white bg-opacity-80 hover:bg-opacity-60 transition ease-in-out duration-200" href="https://www.linkedin.com/in/hmyousuf2010/?fbclid=IwY2xjawE0OxRleHRuA2FlbQIxMAABHQ2UEBvbNtlrxYipDps6Pj7j7wAIzxHZ_yfy8GsO5UhaVwae6Yk1EGADYQ_aem_cMJ4umdvf6KBNuhDRg1ohA" target='_blank'>
+                      <a className="flex justify-center items-center h-full py-6 bg-white bg-opacity-80 hover:bg-opacity-60 transition ease-in-out duration-200" href="https://www.linkedin.com/in/hmyousuf2010" target='_blank'>
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" color="#000000" fill="none">
                           <path d="M7 10V17" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
                           <path d="M11 13V17M11 13C11 11.3431 12.3431 10 14 10C15.6569 10 17 11.3431 17 13V17M11 13V10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
@@ -45,7 +45,7 @@ const Yousuf = () => {
             <div className="md:max-w-sm">
               <p className="mb-8 font-sans text-sm text-indigo-600 font-semibold uppercase tracking-px">👋 Meet Member</p>
               <h2 className="mb-8 text-4xl md:text-4xl xl:text-8xl font-bold font-heading tracking-px-n leading-none">H.M.Yousuf</h2>
-              <p className="mb-7 text-lg text-gray-900 font-medium">Amet minim mollit non M.H Yousuf is a talented web developer with a strong foundation in HTML, CSS, and JavaScript. His expertise lies in crafting visually stunning and highly functional web designs. With a keen eye for detail and a deep understanding of modern web design principles, Yousuf leverages the power of Tailwind CSS to create responsive, user-friendly websites that stand out. His work showcases a perfect blend of creativity and technical proficiency, ensuring that each project he undertakes not only meets but exceeds client expectations. Yousuf's dedication to his craft is evident in the consistently high-quality designs he produces, making him a sought-after professional in the web development community.</p>
+              <p className="mb-7 text-lg text-gray-900 font-medium">Amet minim mollit non H.M. Yousuf is a talented web developer with a strong foundation in HTML, CSS, and JavaScript. His expertise lies in crafting visually stunning and highly functional web designs. With a keen eye for detail and a deep understanding of modern web design principles, Yousuf leverages the power of Tailwind CSS to create responsive, user-friendly websites that stand out. His work showcases a perfect blend of creativity and technical proficiency, ensuring that each project he undertakes not only meets but exceeds client expectations. Yousuf's dedication to his craft is evident in the consistently high-quality designs he produces, making him a sought-after professional in the web development community.</p>
             </div>
           </div>
         </div>

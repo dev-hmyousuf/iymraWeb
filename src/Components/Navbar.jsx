@@ -8,7 +8,7 @@ const Navbar = () => {
   }
   return (
     <>
-      <nav className=' flex justify-between items-center px-5 py-3'>
+      <nav className=' flex justify-between items-center px-5 py-3 z-[9999] '>
         <div className="logo">
           <img src={logo} alt="" />
         </div>

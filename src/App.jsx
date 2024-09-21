@@ -16,6 +16,8 @@ import Belal from "./Components/Team/Belal.jsx";
 import Jubayer from "./Components/Team/Jubayer.jsx";
 import Yousuf from "./Components/Team/Yousuf.jsx";
 import Loader from "./Components/Team/Loader.jsx";
+import Blog from "./Components/Blog/Blog.jsx";
+import Blog1 from './Components/Blog/Blogs/Blog1.jsx'
  
 
 
@@ -58,7 +60,8 @@ function App() {
             <Route path="/team/Belal-Uddin" element={<Belal />} />
             <Route path="/team/Jubayer-Chowdhury" element={<Jubayer />} />
             <Route path="/team/H.M-Yousuf" element={<Yousuf />} />
-       
+            <Route path="/blog" element={<Blog/>} />
+            <Route path="/blog/:id" element={<Blog1/>} />
           </Routes>
           <Footer />
         </div>
