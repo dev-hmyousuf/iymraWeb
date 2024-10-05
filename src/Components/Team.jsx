@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import initialImages from '../assets/team_pic/team.js'
 import { FaLinkedin, FaTwitter, FaFacebook, FaGithub } from "react-icons/fa";
 import { Link } from 'react-router-dom';
+import { FaEarthAsia } from 'react-icons/fa6';
 const Team = () => {
   const [images, setImages] = useState(initialImages);
   return (
@@ -54,7 +55,7 @@ const Team = () => {
                           <div className="w-auto p-1.5">
                             <a
                               className="flex items-center justify-center w-10 h-10 bg-gray-100 rounded-full"
-                              href={image.x} target='_blank'
+                              href={image.github} target='_blank'
                             >
                               <FaGithub className="text-gray-500" size={20} />
                             </a>
@@ -65,6 +66,14 @@ const Team = () => {
                               href={image.fb} target='_blank'
                             >
                               <FaFacebook className="text-gray-500" size={20} />
+                            </a>
+                          </div>
+                          <div className="w-auto p-1.5">
+                            <a
+                              className="flex items-center justify-center w-10 h-10 bg-gray-100 rounded-full"
+                              href={image.portfolio} target='_blank'
+                            >
+                              <FaEarthAsia className="text-gray-500" size={20} />
                             </a>
                           </div>
                         </div>

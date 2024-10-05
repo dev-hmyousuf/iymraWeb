@@ -25,7 +25,7 @@ const Abouts = () => {
             <div className="w-full md:w-1/2 lg:w-1/4 py-8">
               <div className="lg:border-r border-gray-200 px-12">
                 <p className="text-gray-600 mb-2 text-center">Total funding</p>
-                <h2 className="text-4xl lg:text-5xl font-semibold text-center ">$9.6M</h2>
+                <h2 className="text-4xl lg:text-5xl font-semibold text-center ">$200</h2>
               </div>
             </div>
             <div className="w-full md:w-1/2 lg:w-1/4 py-8">
@@ -36,8 +36,8 @@ const Abouts = () => {
             </div>
             <div className="w-full md:w-1/2 lg:w-1/4 py-8">
               <div className="px-12">
-                <p className="text-gray-600 mb-2 text-center">Nationalities</p>
-                <h2 className="text-4xl lg:text-5xl font-semibold text-center">24</h2>
+                <p className="text-gray-600 mb-2 text-center">TIme Support</p>
+                <h2 className="text-4xl lg:text-5xl font-semibold text-center">16 / 7</h2>
               </div>
             </div>
           </div>
@@ -53,8 +53,8 @@ const Abouts = () => {
               <p className="text-gray-600 text-lg">All your operations are connected in a single platform, transforming work into a visible, automated, and collaborative experience. At every turn, you’re supported by smart suggestions and interventions that understand your business and anticipate your needs.</p>
             </div>
           </div>
-          <h2 className="text-center text-4xl lg:text-5xl mb-9 font-bold font-heading">Our investors</h2>
-          <div className="bg-gray-50 rounded-3xl mb-32 flex flex-wrap py-8">
+          <h2 className="hidden text-center text-4xl lg:text-5xl mb-9 font-bold font-heading">Our investors</h2>
+          <div className="hidden bg-gray-50 rounded-3xl mb-32 flex flex-wrap py-8">
             <div className="w-full md:w-1/2 lg:w-1/3 py-8 px-16 flex justify-center items-center">
               <img src={placeholder} alt="" />
             </div>

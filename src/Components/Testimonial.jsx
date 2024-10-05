@@ -127,7 +127,7 @@ const Testimonial = () => {
             className=""
             onClick={scrollRight}
           >
-    <i className="absolute text-indigo-600 right-0 top-1/2 transform -translate-y-1/2 bg-white p-2 rounded-full z-10 text-4xl fa-solid fa-circle-arrow-right"></i>
+          <i className="absolute text-indigo-600 right-0 top-1/2 transform -translate-y-1/2 bg-white p-2 rounded-full z-10 text-4xl fa-solid fa-circle-arrow-right"></i>
 
           </button>
         </div>

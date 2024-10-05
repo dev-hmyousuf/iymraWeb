@@ -16,8 +16,6 @@ import Belal from "./Components/Team/Belal.jsx";
 import Jubayer from "./Components/Team/Jubayer.jsx";
 import Yousuf from "./Components/Team/Yousuf.jsx";
 import Loader from "./Components/Team/Loader.jsx";
-import Blog from "./Components/Blog/Blog.jsx";
-import Blog1 from './Components/Blog/Blogs/Blog1.jsx'
  
 
 
@@ -48,20 +46,18 @@ function App() {
 
           <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="/about" element={<About />} />
+            <Route path="/abouts" element={<About />} />
             <Route path="/services" element={<Services />} />
             <Route path="/feature" element={<Feature />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/testimonials" element={<Testimonial />} />
             <Route path="/faq" element={<FAQ />} />
             <Route path="/team" element={<Team />} />
-            <Route path="/abouts" element={<Abouts />} />
+            <Route path="/about" element={<Abouts />} />
             <Route path="/team/hasan-mahmhud" element={<Abdullah />} />
             <Route path="/team/Belal-Uddin" element={<Belal />} />
             <Route path="/team/Jubayer-Chowdhury" element={<Jubayer />} />
             <Route path="/team/H.M-Yousuf" element={<Yousuf />} />
-            <Route path="/blog" element={<Blog/>} />
-            <Route path="/blog/:id" element={<Blog1/>} />
           </Routes>
           <Footer />
         </div>
