@@ -1,4 +1,4 @@
-
+import React from 'react'
 import 'ldrs/helix'
 const Loader = () => {
     return (

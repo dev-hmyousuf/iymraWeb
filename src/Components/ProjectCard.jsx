@@ -12,7 +12,8 @@ const ProjectCard = ({ project }) => {
         <img src={project.image} alt={project.title} className="w-full h-48 object-cover" />
         <div className="p-4">
           <h3 className="text-xl font-semibold mb-2">{project.title}</h3>
-          <p className="text-gray-600 mb-2">{project.technologies.join(', ')}</p>
+          <div className='   bg-indigo-200 rounded-lg text-black'>  <p className=" mb-2">{project.technologies.join(', ')}</p></div>
+        
           <p className="text-gray-800">{project.description}</p>
           <button onClick={openModal} className="mt-4 bg-indigo-600 text-white px-4 py-2 rounded">
             Learn More

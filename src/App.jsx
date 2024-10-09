@@ -11,7 +11,9 @@ import Testimonial from "./Components/Testimonial.jsx";
 import Team from "./Components/Team.jsx";
 import FAQ from "./Components/FAQ.jsx";
 import Abouts from "./Components/Abouts.jsx";
+import Abdullah from "./Components/Team/Abdullah.jsx";
 import Belal from "./Components/Team/Belal.jsx";
+import Jubayer from "./Components/Team/Jubayer.jsx";
 import Yousuf from "./Components/Team/Yousuf.jsx";
 import Loader from "./Components/Team/Loader.jsx";
  
@@ -52,8 +54,9 @@ function App() {
             <Route path="/faq" element={<FAQ />} />
             <Route path="/team" element={<Team />} />
             <Route path="/about" element={<Abouts />} />
+            <Route path="/team/hasan-mahmhud" element={<Abdullah />} />
             <Route path="/team/Belal-Uddin" element={<Belal />} />
-
+            <Route path="/team/Jubayer-Chowdhury" element={<Jubayer />} />
             <Route path="/team/H.M-Yousuf" element={<Yousuf />} />
           </Routes>
           <Footer />
