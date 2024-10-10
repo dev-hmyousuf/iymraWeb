@@ -14,5 +14,5 @@ Currently, two official plugins are available:
 1. **For the Code editor theme**:
 
    ```bash
-   npm install @uiw/react-codemirror @codemirror/lang-javascript @codemirror/theme-one-dark
+   
 
