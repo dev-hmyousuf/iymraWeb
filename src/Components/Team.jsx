@@ -3,11 +3,12 @@ import initialImages from '../assets/team_pic/team.js'
 import { FaLinkedin, FaTwitter, FaFacebook, FaGithub } from "react-icons/fa";
 import { Link } from 'react-router-dom';
 import { FaEarthAsia } from 'react-icons/fa6';
+import ScrollToTop from '../Hooks/scrollToUp.js';
 const Team = () => {
   const [images, setImages] = useState(initialImages);
   return (
 
-    <>
+    <ScrollToTop>
       <section className="py-16 bg-gray-100 overflow-hidden">
         <div className="container mx-auto px-4">
           <div className="mb-16 max-w-xl mx-auto text-center">
@@ -86,7 +87,7 @@ const Team = () => {
           </div>
         </div>
       </section>
-    </>
+    </ScrollToTop>
   );
 };
 

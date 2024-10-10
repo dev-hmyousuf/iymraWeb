@@ -3,6 +3,7 @@ import { useRef } from 'react';
 import emailjs from '@emailjs/browser';
 import { ToastContainer, toast } from 'react-toastify';
   import 'react-toastify/dist/ReactToastify.css';
+import ScrollToTop from '../Hooks/scrollToUp';
 const Contact = () => {
 
   const form = useRef();
@@ -36,7 +37,8 @@ const Contact = () => {
 
 
   return (
-    <section className="relative py-36 bg-gray-50 overflow-hidden">
+    <ScrollToTop>
+      <section className="relative py-36 bg-gray-50 overflow-hidden">
     <img
       className="absolute bottom-0 right-0"
       src="flaro-assets/images/contact/gradient2.svg"
@@ -217,6 +219,7 @@ const Contact = () => {
       </div>
     </div>
   </section>
+    </ScrollToTop>
   
   )
 }

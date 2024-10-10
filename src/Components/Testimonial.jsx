@@ -1,5 +1,6 @@
 import React, { useRef } from 'react';
 import './scrollbar.css'; // Import custom CSS for the scrollbar
+import ScrollToTop from '../Hooks/scrollToUp';
 
 const Testimonial = () => {
   const scrollRef = useRef(null);
@@ -65,7 +66,7 @@ const Testimonial = () => {
   };
 
   return (
-    <>
+    <ScrollToTop>
       <div className="max-w-7xl mx-auto mt-20">
         <div className="max-w-xl mb-24 mx-auto text-center">
           <span className="inline-block py-1 px-3 mb-4 text-xs font-semibold text-orange-900 bg-orange-50 rounded-full">TESTIMONIALS</span>
@@ -135,7 +136,7 @@ const Testimonial = () => {
       </div>
       
      
-    </>
+    </ScrollToTop>
   );
 };
 

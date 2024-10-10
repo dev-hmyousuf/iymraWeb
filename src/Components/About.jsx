@@ -1,9 +1,10 @@
- 
+import ScrollToTop from "../Hooks/scrollToUp";
 import about from "../assets/aboutsec/Rectangle 25.png";
 
 const About = () => {
   return (
-    <section className="py-0" id="about">
+    <ScrollToTop>
+      <section className="py-0" id="about">
       <div className="container px-0 mx-auto">
         <div  className="flex items-center flex-wrap mb-32 mt-14">
           <div   className="w-full lg:w-1/2 p-8">
@@ -42,6 +43,7 @@ const About = () => {
         </div>
       </div>
     </section>
+    </ScrollToTop>
   );
 };
 

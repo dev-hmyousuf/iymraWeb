@@ -1,6 +1,7 @@
 import women from "../assets/faq/woman.png"
 import { useState } from 'react';
 import { Link } from "react-router-dom";
+import ScrollToTop from "../Hooks/scrollToUp";
 const FAQ = () => {
   const [openIndex, setOpenIndex] = useState(null);
 
@@ -9,7 +10,8 @@ const FAQ = () => {
   };
 
   return (
-    <section className="py-28 bg-white overflow-hidden">
+    <ScrollToTop>
+      <section className="py-28 bg-white overflow-hidden">
       <div className="container px-4 mx-auto">
         <div className="flex flex-wrap -m-8">
           <div className="w-full md:w-1/2 p-8">
@@ -132,6 +134,7 @@ const FAQ = () => {
         </div>
       </div>
     </section>
+    </ScrollToTop>
   );
 };
 

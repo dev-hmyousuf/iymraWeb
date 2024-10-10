@@ -5,8 +5,10 @@ import seo from  "../assets/services/seo.png"
 import web from  "../assets/services/web_pic.png"
 import app from  "../assets/services/app_pic.png"
 import ads from  "../assets/services/ads_run.png"
+import ScrollToTop from "../Hooks/scrollToUp"
 const Services = () => {
   return (
+  <ScrollToTop>
     <section className="py-12 md:py-24 bg-neutral-100 ">
     <div className="container mx-auto px-4">
       <div className="mb-12 md:mb-24 text-center max-w-6xl mx-auto">
@@ -160,6 +162,7 @@ const Services = () => {
       </div>
     </div>
   </section>
+  </ScrollToTop>
   
   )
 }

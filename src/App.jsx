@@ -16,15 +16,16 @@ import Belal from "./Components/Team/Belal.jsx";
 import Jubayer from "./Components/Team/Jubayer.jsx";
 import Yousuf from "./Components/Team/Yousuf.jsx";
 import Loader from "./Components/Team/Loader.jsx";
-import AOS from "aos";  // Corrected import
+import AOS from "aos"; 
 import "aos/dist/aos.css";
 
 function App() {
   const [loading, setLoading] = useState(true);
 
+
   useEffect(() => {
     AOS.init({
-      duration: 1000,  // Initialize AOS
+      duration: 1000,  
     });
     setTimeout(() => {
       setLoading(false);
@@ -50,9 +51,7 @@ function App() {
             <Route path="/faq" element={<FAQ />} />
             <Route path="/team" element={<Team />} />
             <Route path="/about" element={<Abouts />} />
-            <Route path="/team/hasan-mahmhud" element={<Abdullah />} />
             <Route path="/team/Belal-Uddin" element={<Belal />} />
-            <Route path="/team/Jubayer-Chowdhury" element={<Jubayer />} />
             <Route path="/team/H.M-Yousuf" element={<Yousuf />} />
           </Routes>
           <Footer />

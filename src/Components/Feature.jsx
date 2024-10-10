@@ -1,8 +1,10 @@
+import ScrollToTop from "../Hooks/scrollToUp"
+
  
 
 const Feature = () => {
   return (
-   <>
+   <ScrollToTop>
     <section className="w-full bg-slate-50 grid place-items-center ">
     <section
       id="features"
@@ -104,7 +106,8 @@ const Feature = () => {
       </div>
     </section>
   </section>
-   </>
+    </ScrollToTop>
+   
   
   )
 }

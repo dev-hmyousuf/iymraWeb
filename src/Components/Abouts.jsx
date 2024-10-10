@@ -5,9 +5,10 @@ import pic3 from '../assets/abouts/picture3.png'
 import placeholder from '../assets/abouts/placeholder-logo1.png'
 import Team from './Team'
 import About from './About'
+import ScrollToTop from '../Hooks/scrollToUp'
 const Abouts = () => {
   return (
-    <>
+    <ScrollToTop>
       <section className="py-4">
         <div className="container px-4 mx-auto">
           {/* this is about component */}
@@ -81,7 +82,7 @@ const Abouts = () => {
 
         </div>
       </section>
-    </>
+    </ScrollToTop>
   )
 }
 

@@ -9,10 +9,11 @@ import News from "../Components/News";
 import ProjectSection from "../Components/ProjectSection";
 import Services from "../Components/Services";
 import Testimonial from "../Components/Testimonial";
+import ScrollToTop from "../Hooks/scrollToUp";
 
 const Home = () => {
   return (
-    <div>
+    <ScrollToTop>
       <Hero />
       <About />
 
@@ -21,11 +22,10 @@ const Home = () => {
       <Feature />
       <Testimonial />
       <FAQ />
-      {/* <JoinUs/> */}
       <News />
 
       <Contact />
-    </div>
+    </ScrollToTop>
   );
 };
 

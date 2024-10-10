@@ -1,8 +1,10 @@
 import React from 'react'
+import ScrollToTop from '../../Hooks/scrollToUp'
 
 const Yousuf = () => {
   return (
-    <section className="py-36 bg-blueGray-50 overflow-hidden p-10">
+    <ScrollToTop>
+      <section className="py-36 bg-blueGray-50 overflow-hidden p-10">
       <div className="container px-4 mx-auto">
         <div className="flex flex-wrap lg:items-center -m-8 lg:-m-14">
           <div className="w-full md:w-1/2 p-8 lg:p-14">
@@ -51,6 +53,7 @@ const Yousuf = () => {
         </div>
       </div>
     </section>
+    </ScrollToTop>
   )
 }
 
