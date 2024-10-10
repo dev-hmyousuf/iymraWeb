@@ -49,7 +49,7 @@ const services = [
     description:
       "Creating comprehensive strategies to boost your brand's online reach and engagement.",
   },
-  // Additional services for demonstration
+ 
   {
     icon: Code,
     title: "Graphics Design",
@@ -119,17 +119,15 @@ const FloatingIcons = () => {
 export default function Heros() {
   const [activeTab, setActiveTab] = useState("development");
 
-  // Toggle function for "See More" button
-  
-
+ 
   return (
     <section className="relative min-h-screen overflow-hidden bg-gradient-to-br from-blue-600 via-purple-600 to-pink-600">
-      {/* Animated background */}
+     
       <div className="absolute inset-0 opacity-20">
         <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,...')]" />
       </div>
 
-      {/* Floating icons */}
+     
       <div className="absolute inset-0">
         <FloatingIcons />
       </div>
@@ -200,7 +198,7 @@ export default function Heros() {
                   exit={{ opacity: 0, y: -20 }}
                   transition={{ duration: 0.3 }}
                 >
-                  {/* Set a fixed height and enable overflow-y scroll */}
+                
                   <div className={`overflow-y-auto max-h-96 `}>
                     {activeTab === "development" && (
                       <>
