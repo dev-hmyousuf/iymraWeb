@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { Route, Routes } from "react-router-dom";
 import Navbar from "./Components/Navbar.jsx";
 import Footer from "./Components/Footer.jsx";
-import Home from "./Home/Home.jsx"
+import Home from "./Home/Home.jsx";
 import About from "./Components/About.jsx";
 import Services from "./Components/Services.jsx";
 import Feature from "./Components/Feature.jsx";
@@ -16,34 +16,30 @@ import Belal from "./Components/Team/Belal.jsx";
 import Jubayer from "./Components/Team/Jubayer.jsx";
 import Yousuf from "./Components/Team/Yousuf.jsx";
 import Loader from "./Components/Team/Loader.jsx";
- 
-
-
+import AOS from "aos";  // Corrected import
+import "aos/dist/aos.css";
 
 function App() {
   const [loading, setLoading] = useState(true);
 
-
   useEffect(() => {
-
+    AOS.init({
+      duration: 1000,  // Initialize AOS
+    });
     setTimeout(() => {
       setLoading(false);
     }, 2000);
   }, []);
-  return (
 
+  return (
     <div className="App">
       {loading ? (
         <Loader />
       ) : (
         <div>
-
-
           <Navbar />
           <br />
           <br />
-
-
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/abouts" element={<About />} />

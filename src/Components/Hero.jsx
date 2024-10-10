@@ -4,16 +4,16 @@ const Hero = () => {
   return (
     <>
 
-  <div className="relative outline-0  flex lg:justify-between items-center flex-col-reverse  md:flex-row mx-auto px-3 md:mt-5 md:py-8 md:px-7 lg:px-10 xl:px-20 2xl:px-20">
-    <div className="hero__text 2xl:w-[800px] m-3">
+  <div    className="relative outline-0  flex lg:justify-between items-center flex-col-reverse  md:flex-row mx-auto px-3 md:mt-5 md:py-8 md:px-7 lg:px-10 xl:px-20 2xl:px-20">
+    <div   className="hero__text 2xl:w-[800px] m-3">
       <p className="md:text-xl lg:text-2xl xl:text-2xl 2xl:text-4xl text-violet-500">
         Web Development{" "}
       </p>
-      <h1 className="text-[38px] lg:text-[44px] xl:text-[55px] 2xl:text-[80px] font-bold my-3">
+      <h1   className="text-[38px] lg:text-[44px] xl:text-[55px] 2xl:text-[80px] font-bold my-3">
         Work that we <span className="text-violet-600">produce</span> for our{" "}
         <span className="text-violet-500">clients</span>
       </h1>
-      <h3 className=" 2xl:text-2xl 2xl:py-4">
+      <h3  className=" 2xl:text-2xl 2xl:py-4">
         At Connect Agency, we specialize in graphic design, SEO, and web
         development to enhance your brands  digital presence. Our team is
         dedicated to crafting visually engaging designs, optimizing your online
@@ -25,7 +25,7 @@ const Hero = () => {
         </button>
       </a>
     </div>
-    <img
+    <img  
       src= {hero}
       className="w-[70%] md:w-[35%] xl:w-[45%] 2xl:w-[40%]"
     />
@@ -44,7 +44,7 @@ const Hero = () => {
         }}
       />
     </div>
-    <div className="mx-auto max-w-2xl py-3 sm:py-4 lg:py-8">
+    <div  className="mx-auto max-w-2xl py-3 sm:py-4 lg:py-8">
       <div className="hidden sm:mb-8 sm:flex sm:justify-center">
         <div className="relative rounded-full px-3 py-1 text-sm leading-6 text-gray-600 ring-1 ring-gray-900/10 hover:ring-gray-900/20">
           Announcing our next round of funding.{" "}
@@ -64,7 +64,7 @@ const Hero = () => {
           aliqua.
         </p>
         <div className="mt-10 flex items-center justify-center gap-x-6">
-          <a
+          <a data-aos="zoom-in-up"
             href="#"
             className="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
           >

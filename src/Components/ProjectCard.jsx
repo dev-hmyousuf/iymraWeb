@@ -8,7 +8,7 @@ const ProjectCard = ({ project }) => {
 
   return (
     <>
-      <div className="bg-white shadow-md rounded-lg overflow-hidden">
+      <div  className="bg-white shadow-md rounded-lg overflow-hidden">
         <img src={project.image} alt={project.title} className="w-full h-48 object-cover" />
         <div className="p-4">
           <h3 className="text-xl font-semibold mb-2">{project.title}</h3>

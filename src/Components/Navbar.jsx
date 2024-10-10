@@ -13,37 +13,37 @@ const Navbar = () => {
           <img src={logo} alt="" />
         </div>
         <ul className={`md:flex  w-full md:w-auto ${Open ? 'open' : ''}`}>
-          <li className='hover:bg-gray-400 font-bold p-3 rounded-md'>
+          <li className='hover:bg-gray-100 font-bold p-3 rounded-md'>
             <Link to={'/'}>
               Home
             </Link>
           </li>
-          <li className='hover:bg-gray-400 font-bold p-3 rounded-md'>
+          <li className='hover:bg-gray-100 font-bold p-3 rounded-md'>
             <Link to={'/team'}>
             Team
             </Link>
           </li>
-          <li className='hover:bg-gray-400 font-bold p-3 rounded-md'>
+          <li className='hover:bg-gray-100 font-bold p-3 rounded-md'>
             <Link to={'/abouts'}>
             About
             </Link>
           </li>
-          <li className='hover:bg-gray-400 font-bold p-3 rounded-md'>
+          <li className='hover:bg-gray-100 font-bold p-3 rounded-md'>
             <Link to={'/services'}>
             Services
             </Link>
           </li>
-          <li className='hover:bg-gray-400 font-bold p-3 rounded-md'>
+          <li className='hover:bg-gray-100 font-bold p-3 rounded-md'>
             <Link to={'/feature'}>
             Features
             </Link>
           </li>
-          <li className='hover:bg-gray-400 font-bold p-3 rounded-md'>
+          <li className='hover:bg-gray-100 font-bold p-3 rounded-md'>
             <Link to={'/testimonials'}>
             Testimonials
             </Link>
           </li>
-          <li className='hover:bg-gray-400 font-bold p-3 rounded-md'>
+          <li className='hover:bg-gray-100 font-bold p-3 rounded-md'>
             <Link to={'/contact'}>
             Contact
             </Link>
