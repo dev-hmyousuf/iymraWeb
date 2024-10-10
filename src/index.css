@@ -75,3 +75,8 @@
     left: 50%;
     transform: translate(-50%,-50%);
   }
+  @layer base {
+  :root {
+          --radius: 0.5rem;
+     }
+}

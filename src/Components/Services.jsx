@@ -1,9 +1,10 @@
  
 import email from  "../assets/services/email_marketing.png"
-import  graphics from  "../assets/services/graphics.png"
-import   seo from  "../assets/services/seo.png"
-import  user from  "../assets/services/user_flow.png"
-import  web from  "../assets/services/web_pic.png"
+import graphics from  "../assets/services/graphics.png"
+import seo from  "../assets/services/seo.png"
+import web from  "../assets/services/web_pic.png"
+import app from  "../assets/services/app_pic.png"
+import ads from  "../assets/services/ads_run.png"
 const Services = () => {
   return (
     <section className="py-12 md:py-24 bg-neutral-100 ">
@@ -67,6 +68,29 @@ const Services = () => {
               </div>
             </div>
           </div>
+          <div className="w-full md:w-1/2 xl:w-8/12 p-2.5 ">
+            <div className="h-full p-10 bg-white rounded-5xl">
+              <div className="mb-24">
+                <h4 className="mb-2 text-5xl font-medium tracking-tight font-heading">
+                  App Development
+                </h4>
+                <p className="font-medium text-lg text-neutral-600 tracking-tight max-w-xl">
+                  Can create, connect, verify, and search across all you knowledge
+                  platforms is one centralized, secure place - accelarating
+                  productivity.
+                </p>
+              </div>
+              <div className="flex flex-wrap justify-between items-end -m-8">
+                <div className="w-auto p-8">
+                  <img
+                    className="h- object-cover"
+                    src= {app}
+                    alt=""
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
           <div className="w-full md:w-1/2 xl:w-1/3 p-2.5">
             <div className="h-full p-10 bg-white rounded-5xl">
               <div className="flex flex-col justify-between h-full">
@@ -95,7 +119,7 @@ const Services = () => {
               <div className="flex flex-col justify-between h-full">
                 <div className="w-full">
                   <h4 className="mb-2 text-4xl font-medium tracking-tight font-heading">
-                    User-flow
+                    Ads Run
                   </h4>
                   <p className="mb-12 font-medium text-lg text-neutral-600 tracking-tight max-w-xs">
                     We craft seamless user journeys by designing intuitive and
@@ -104,8 +128,8 @@ const Services = () => {
                     start to finish
                   </p>
                   <img
-                    className="mb-8 h-24 object-cover mx-auto"
-                    src= {user}
+                    className="mb-8 w-12 object-cover mx-auto"
+                    src= {ads}
                     alt=""
                   />
                 </div>
@@ -117,7 +141,7 @@ const Services = () => {
               <div className="flex flex-col justify-between h-full">
                 <div className="w-full">
                   <h4 className="mb-2 text-4xl font-medium tracking-tight font-heading">
-                   Youtube  Marketing
+                   Email Marketing
                   </h4>
                   <p className="mb-12 font-medium text-lg text-neutral-600 tracking-tight max-w-xs">
                     We design personalized email marketing campaigns that help

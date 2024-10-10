@@ -1,97 +1,362 @@
+import { AnimatePresence, motion } from "framer-motion";
+import {
+  Code,
+  Rocket,
+  Search,
+  Smartphone,
+  TrendingUp,
+  Megaphone,
+  Package,
+  Terminal,
+  Image,
+  VideoIcon
+} from "lucide-react";
+import { useState } from "react";
+import { Button } from "./ui/button";
+import { Card, CardContent } from "./ui/card";
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "./ui/tabs";
+import { Link } from "react-router-dom";
 
-import  hero from "../assets/hero_sec/hero.png"
-const Hero = () => {
+const services = [
+
+  {
+    icon: Terminal,
+    title: "Web Development",
+    description:
+      "Crafting responsive and user-friendly websites tailored to your needs.",
+  },
+  {
+    icon: Code,
+    title: "Web Development",
+    description:
+      "Crafting responsive and user-friendly websites tailored to your needs.",
+  },
+  {
+    icon: Smartphone,
+    title: "App Development",
+    description:
+      "Building innovative mobile applications for iOS and Android platforms.",
+  },
+  {
+    icon: Search,
+    title: "SEO",
+    description:
+      "Optimizing your online presence to improve search engine rankings and visibility.",
+  },
+  {
+    icon: TrendingUp,
+    title: "Digital Marketing",
+    description:
+      "Creating comprehensive strategies to boost your brand's online reach and engagement.",
+  },
+  // Additional services for demonstration
+  {
+    icon: Code,
+    title: "Graphics Design",
+    description:
+      "Crafting unique designs tailored to your brand's identity.",
+  },
+  {
+    icon: Smartphone,
+    title: "Content Creation",
+    description:
+      "Producing engaging content that resonates with your audience.",
+  },
+  {
+    icon: VideoIcon,
+    title: "Content Creation",
+    description:
+      "Producing engaging content that resonates with your audience.",
+  },
+];
+
+const scrollToAbout = () => {
+  const aboutSection = document.getElementById('about');
+  if (aboutSection) {
+    aboutSection.scrollIntoView({ behavior: 'smooth' });
+  }
+};
+
+
+const FloatingIcons = () => {
   return (
     <>
-
-  <div    className="relative outline-0  flex lg:justify-between items-center flex-col-reverse  md:flex-row mx-auto px-3 md:mt-5 md:py-8 md:px-7 lg:px-10 xl:px-20 2xl:px-20">
-    <div   className="hero__text 2xl:w-[800px] m-3">
-      <p className="md:text-xl lg:text-2xl xl:text-2xl 2xl:text-4xl text-violet-500">
-        Web Development{" "}
-      </p>
-      <h1   className="text-[38px] lg:text-[44px] xl:text-[55px] 2xl:text-[80px] font-bold my-3">
-        Work that we <span className="text-violet-600">produce</span> for our{" "}
-        <span className="text-violet-500">clients</span>
-      </h1>
-      <h3  className=" 2xl:text-2xl 2xl:py-4">
-        At Connect Agency, we specialize in graphic design, SEO, and web
-        development to enhance your brands  digital presence. Our team is
-        dedicated to crafting visually engaging designs, optimizing your online
-        reach, and building responsive websites that drive results.
-      </h3>
-      <a href="#about">
-        <button className="outline-0  text-white px-5 py-3 xl:px-8 xl:py-4 2xl:px-10 2xl:py-5 2xl:text-2xl mt-4 rounded-full bg-gradient-to-tr to-blue-400 from-violet-500 hover:bg-gradient-to-br hover:to-blue-500 hover:from-violet-500 duration-150">
-          Get Started
-        </button>
-      </a>
-    </div>
-    <img  
-      src= {hero}
-      className="w-[70%] md:w-[35%] xl:w-[45%] 2xl:w-[40%]"
-    />
-  </div>
-  {/*  */}
-  <div className="hidden relative isolate px-3 pt-8 lg:px-12">
-    <div
-      className="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80"
-      aria-hidden="true"
-    >
-      <div
-        className="relative left-[calc(50%-11rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-30 sm:left-[calc(50%-30rem)] sm:w-[72.1875rem]"
-        style={{
-          clipPath:
-            "polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)"
-        }}
-      />
-    </div>
-    <div  className="mx-auto max-w-2xl py-3 sm:py-4 lg:py-8">
-      <div className="hidden sm:mb-8 sm:flex sm:justify-center">
-        <div className="relative rounded-full px-3 py-1 text-sm leading-6 text-gray-600 ring-1 ring-gray-900/10 hover:ring-gray-900/20">
-          Announcing our next round of funding.{" "}
-          <a href="#" className="font-semibold text-indigo-600">
-            <span className="absolute inset-0" aria-hidden="true" />
-            Read more <span aria-hidden="true">→</span>
-          </a>
-        </div>
-      </div>
-      <div className="text-center">
-        <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
-          Data to enrich your online business
-        </h1>
-        <p className="mt-6 text-lg leading-8 text-gray-600">
-          Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem
-          cupidatat commodo. Elit sunt amet fugiat veniam occaecat fugiat
-          aliqua.
-        </p>
-        <div className="mt-10 flex items-center justify-center gap-x-6">
-          <a data-aos="zoom-in-up"
-            href="#"
-            className="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+      {services.map((service, index) => {
+        const IconComponent = service.icon;
+        return (
+          <motion.div
+            key={index}
+            className="absolute text-white opacity-20"
+            initial={{
+              x: Math.random() * window.innerWidth,
+              y: Math.random() * window.innerHeight,
+            }}
+            animate={{
+              x: [
+                Math.random() * window.innerWidth,
+                Math.random() * window.innerWidth,
+              ],
+              y: [
+                Math.random() * window.innerHeight,
+                Math.random() * window.innerHeight,
+              ],
+              rotate: [0, 360],
+            }}
+            transition={{
+              duration: 20 + index * 5,
+              repeat: Infinity,
+              ease: "linear",
+            }}
           >
-            Get started
-          </a>
-          <a href="#" className="text-sm font-semibold leading-6 text-gray-900">
-            Learn more <span aria-hidden="true">→</span>
-          </a>
+            <IconComponent size={48} />
+          </motion.div>
+        );
+      })}
+    </>
+  );
+};
+
+export default function Heros() {
+  const [activeTab, setActiveTab] = useState("development");
+
+  // Toggle function for "See More" button
+  
+
+  return (
+    <section className="relative min-h-screen overflow-hidden bg-gradient-to-br from-blue-600 via-purple-600 to-pink-600">
+      {/* Animated background */}
+      <div className="absolute inset-0 opacity-20">
+        <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,...')]" />
+      </div>
+
+      {/* Floating icons */}
+      <div className="absolute inset-0">
+        <FloatingIcons />
+      </div>
+
+      <div className="container relative z-10 mx-auto flex min-h-screen items-center px-4 py-16">
+        <div className="grid gap-8 lg:grid-cols-2">
+          <div className="flex flex-col justify-center space-y-8">
+            <motion.h1
+              className="text-4xl font-bold leading-tight text-white sm:text-5xl md:text-6xl"
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8 }}
+            >
+              Empowering Brands with Exceptional Digital Solutions
+            </motion.h1>
+            <motion.p
+              className="max-w-2xl text-xl text-gray-200"
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 0.2 }}
+            >
+              At Connect Agency, we specialize in web and app development, SEO,
+              and digital marketing. Let us help you take your business to new
+              heights.
+            </motion.p>
+            <motion.div
+              className="flex flex-col space-y-4 sm:flex-row sm:space-x-4 sm:space-y-0"
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 0.4 }}
+            >
+              <Button
+                variant="default"
+                size="lg"
+                className="bg-white text-blue-600 hover:bg-blue-100"
+                onClick={scrollToAbout}
+              >
+                Get Started
+              </Button>
+              <Link to='/services'>
+              <Button
+                variant="outline"
+                size="lg"
+                className="border-blue-600   hover:bg-white text-blue-600"
+              >
+                View Our Services
+              </Button>
+              </Link>
+
+            </motion.div>
+          </div>
+          <div className="hidden lg:flex lg:items-center lg:justify-center">
+            <Tabs
+              defaultValue="development"
+              className="w-full max-w-md"
+              onValueChange={setActiveTab}
+            >
+              <TabsList className="grid w-full grid-cols-3 bg-blue-900/20">
+                <TabsTrigger className='text-gray-300' value="development">Web & App</TabsTrigger>
+                <TabsTrigger className='text-gray-300' value="marketing">Marketing</TabsTrigger>
+                <TabsTrigger className='text-gray-300' value="others">Others</TabsTrigger>
+              </TabsList>
+              <AnimatePresence mode="wait">
+                <motion.div
+                  key={activeTab}
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  exit={{ opacity: 0, y: -20 }}
+                  transition={{ duration: 0.3 }}
+                >
+                  {/* Set a fixed height and enable overflow-y scroll */}
+                  <div className={`overflow-y-auto max-h-96 `}>
+                    {activeTab === "development" && (
+                      <>
+                        <TabsContent value="development" className="mt-4">
+                          <Card>
+                            <CardContent className="flex items-center space-x-4 p-6">
+                              <Package className="h-10 w-10 text-blue-500" />
+                              <div>
+                                <h3 className="text-lg font-semibold">
+                                  Web Development (Mern Stack)
+                                </h3>
+                                <p className="text-sm text-gray-500">
+                                  Cutting-edge solutions for your digital presence
+                                </p>
+                              </div>
+                            </CardContent>
+                          </Card>
+                        </TabsContent>
+                        <TabsContent value="development" className="mt-4">
+                          <Card>
+                            <CardContent className="flex items-center space-x-4 p-6">
+                              <Smartphone className="h-10 w-10 text-blue-500" />
+                              <div>
+                                <h3 className="text-lg font-semibold">
+                                  App Development (Android & Ios)
+                                </h3>
+                                <p className="text-sm text-gray-500">
+                                  Cutting-edge solutions for your digital presence
+                                </p>
+                              </div>
+                            </CardContent>
+                          </Card>
+                        </TabsContent>
+                        <TabsContent value="development" className="mt-4">
+                          <Card>
+                            <CardContent className="flex items-center space-x-4 p-6">
+                              <Terminal className="h-10 w-10 text-blue-500" />
+                              <div>
+                                <h3 className="text-lg font-semibold">
+                                  Web Development (Php & Laravel)
+                                </h3>
+                                <p className="text-sm text-gray-500">
+                                  Cutting-edge solutions for your digital presence
+                                </p>
+                              </div>
+                            </CardContent>
+                          </Card>
+                        </TabsContent>
+                        <TabsContent value="development" className="mt-4">
+                          <Card>
+                            <CardContent className="flex items-center space-x-4 p-6">
+                            <svg className="w-10 h-10 fill-blue-600 text-blue-600" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M256 8C119.3 8 8 119.2 8 256c0 136.7 111.3 248 248 248s248-111.3 248-248C504 119.2 392.7 8 256 8zM33 256c0-32.3 6.9-63 19.3-90.7l106.4 291.4C84.3 420.5 33 344.2 33 256zm223 223c-21.9 0-43-3.2-63-9.1l66.9-194.4 68.5 187.8c.5 1.1 1 2.1 1.6 3.1-23.1 8.1-48 12.6-74 12.6zm30.7-327.5c13.4-.7 25.5-2.1 25.5-2.1 12-1.4 10.6-19.1-1.4-18.4 0 0-36.1 2.8-59.4 2.8-21.9 0-58.7-2.8-58.7-2.8-12-.7-13.4 17.7-1.4 18.4 0 0 11.4 1.4 23.4 2.1l34.7 95.2L200.6 393l-81.2-241.5c13.4-.7 25.5-2.1 25.5-2.1 12-1.4 10.6-19.1-1.4-18.4 0 0-36.1 2.8-59.4 2.8-4.2 0-9.1-.1-14.4-.3C109.6 73 178.1 33 256 33c58 0 110.9 22.2 150.6 58.5-1-.1-1.9-.2-2.9-.2-21.9 0-37.4 19.1-37.4 39.6 0 18.4 10.6 33.9 21.9 52.3 8.5 14.8 18.4 33.9 18.4 61.5 0 19.1-7.3 41.2-17 72.1l-22.2 74.3-80.7-239.6zm81.4 297.2l68.1-196.9c12.7-31.8 17-57.2 17-79.9 0-8.2-.5-15.8-1.5-22.9 17.4 31.8 27.3 68.2 27.3 107 0 82.3-44.6 154.1-110.9 192.7z"/></svg>
+                              <div>
+                                <h3 className="text-lg font-semibold">
+                                  Web Development (Wordpress)
+                                </h3>
+                                <p className="text-sm text-gray-500">
+                                  Cutting-edge solutions for your digital presence
+                                </p>
+                              </div>
+                            </CardContent>
+                          </Card>
+                        </TabsContent>
+                      </>
+                    )}
+                    {activeTab === "marketing" && (
+                      <>
+                        <TabsContent value="marketing" className="mt-4">
+                          <Card>
+                            <CardContent className="flex items-center space-x-4 p-6">
+                              <TrendingUp className="h-10 w-10 text-blue-500" />
+                              <div>
+                                <h3 className="text-lg font-semibold">
+                                  SEO
+                                </h3>
+                                <p className="text-sm text-gray-500">
+                                  Optimize your website to rank higher in search results.
+                                </p>
+                              </div>
+                            </CardContent>
+                          </Card>
+                        </TabsContent>
+                        <TabsContent value="marketing" className="mt-4">
+                          <Card>
+                            <CardContent className="flex items-center space-x-4 p-6">
+                              <Megaphone className="h-10 w-10 text-blue-500" />
+                              <div>
+                                <h3 className="text-lg font-semibold">
+                                  Ads Run
+                                </h3>
+                                <p className="text-sm text-gray-500">
+                                  Optimize your website to rank higher in search results.
+                                </p>
+                              </div>
+                            </CardContent>
+                          </Card>
+                        </TabsContent>
+                        <TabsContent value="marketing" className="mt-4">
+                          <Card>
+                            <CardContent className="flex items-center space-x-4 p-6">
+                              <Rocket className="h-10 w-10 text-blue-500" />
+                              <div>
+                                <h3 className="text-lg font-semibold">
+                                  Social Media Marketing
+                                </h3>
+                                <p className="text-sm text-gray-500">
+                                  Increase your brand's visibility on social platforms.
+                                </p>
+                              </div>
+                            </CardContent>
+                          </Card>
+                        </TabsContent>
+                      </>
+                    )}
+                    {activeTab === "others" && (
+                      <>
+                        <TabsContent value="others" className="mt-4">
+                          <Card>
+                            <CardContent className="flex items-center space-x-4 p-6">
+                              <VideoIcon className="h-10 w-10 text-blue-500" />
+                              <div>
+                                <h3 className="text-lg font-semibold">
+                                  Content Creation
+                                </h3>
+                                <p className="text-sm text-gray-500">
+                                  Engaging content to attract and retain customers.
+                                </p>
+                              </div>
+                            </CardContent>
+                          </Card>
+                        </TabsContent>
+                        <TabsContent value="others" className="mt-4">
+                          <Card>
+                            <CardContent className="flex items-center space-x-4 p-6">
+                              <Image className="h-10 w-10 text-blue-500" />
+                              <div>
+                                <h3 className="text-lg font-semibold">
+                                  Graphics Design
+                                </h3>
+                                <p className="text-sm text-gray-500">
+                                  Stunning designs to represent your brand.
+                                </p>
+                              </div>
+                            </CardContent>
+                          </Card>
+                        </TabsContent>
+                      </>
+                    )}
+                  </div>
+                  
+                </motion.div>
+              </AnimatePresence>
+            </Tabs>
+          </div>
         </div>
       </div>
-    </div>
-    <div
-      className="absolute inset-x-0 top-[calc(100%-13rem)] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[calc(100%-30rem)]"
-      aria-hidden="true"
-    >
-      <div
-        className="relative left-[calc(50%+3rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-30 sm:left-[calc(50%+36rem)] sm:w-[72.1875rem]"
-        style={{
-          clipPath:
-            "polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)"
-        }}
-      />
-    </div>
-  </div>
-</>
-
-  )
+    </section>
+  );
 }
-
-export default Hero
