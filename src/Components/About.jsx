@@ -23,9 +23,9 @@ const About = () => {
               </svg>
               <span className="text-orange-500 text-sm font-medium">About Us</span>
             </div>
-            <h1   className="text-6xl lg:text-7xl font-bold font-heading mb-6 max-w-md lg:max-w-2xl">
+            <h2   className="text-6xl lg:text-7xl font-bold font-heading mb-6 max-w-md lg:max-w-2xl">
               On a mission to make Beauty.
-            </h1>
+            </h2>
             <p   className="text-gray-600 text-lg mb-12">
               At Connect Agency, we are your trusted partner for exceptional digital
               solutions, with a focus on web development, SEO, and graphic design.

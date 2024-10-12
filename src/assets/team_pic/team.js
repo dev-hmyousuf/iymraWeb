@@ -3,7 +3,7 @@ const initialImages = [
     {
         src: 'https://i.postimg.cc/CKZ5gwq4/432674577-402808842337421-8665374280434029454-n.jpg',
 
-
+        pageLink: "/team/Belal-Uddin",
         name: "Belal Uddin",
         role: 'Founder & Web Developer (Front-End)',
         portfolio: '#',
@@ -18,7 +18,7 @@ const initialImages = [
     {
         src: 'https://i.postimg.cc/QxbHg4Dc/456653996-122128544822345331-6987830639475396671-n.jpg',
 
-
+        pageLink: "",
         name: "H.M.Yousuf ",
         role: 'Founder & Web Developer (Front-End)',
         portfolio: 'https://hmyousuf.vercel.app',

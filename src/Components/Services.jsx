@@ -12,7 +12,7 @@ const Services = () => {
     <section className="py-12 md:py-24 bg-neutral-100 ">
     <div className="container mx-auto px-4">
       <div className="mb-12 md:mb-24 text-center max-w-6xl mx-auto">
-        <h1 className="mb-16 font-semibold text-4xl sm:text-4xl xl:text-7xl font-heading">
+        <h2 className="mb-16 font-semibold text-4xl sm:text-4xl xl:text-7xl font-heading">
           <span>
             Join <span className="text-violet-400">Connect Agency</span>, and
             change
@@ -20,7 +20,7 @@ const Services = () => {
           <span className="bg-orange-200 rounded-lg px-4 mt-1 inline-block">
             the future.
           </span>
-        </h1>
+        </h2>
         <p className="font-semibold text-4xl text-neutral-600 tracking-tight">
           Your journey to digital excellence starts here.
         </p>

@@ -207,9 +207,9 @@ export default function Heros() {
                             <CardContent className="flex items-center space-x-4 p-6">
                               <Package className="h-10 w-10 text-blue-500" />
                               <div>
-                                <h3 className="text-lg font-semibold">
+                                <h2 className="text-lg font-semibold">
                                   Web Development (Mern Stack)
-                                </h3>
+                                </h2>
                                 <p className="text-sm text-gray-500">
                                   Cutting-edge solutions for your digital presence
                                 </p>
