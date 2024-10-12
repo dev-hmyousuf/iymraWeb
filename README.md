@@ -14,5 +14,5 @@ Currently, two official plugins are available:
 1. **For the Code editor theme**:
 
    ```bash
-   
+    
 
