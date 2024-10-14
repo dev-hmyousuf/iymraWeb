@@ -6,21 +6,56 @@ import web from  "../assets/services/web_pic.png"
 import app from  "../assets/services/app_pic.png"
 import ads from  "../assets/services/ads_run.png"
 import ScrollToTop from "../Hooks/scrollToUp"
+import { Helmet } from "react-helmet"
 const Services = () => {
+  const currentPage = 'services'; 
   return (
   <ScrollToTop>
+    {currentPage == 'services' && (
+      <Helmet>
+      <title>Our Services - Connect Agency</title>
+      <meta
+          name="description"
+          content="Discover our exceptional digital services, including web development, graphic design, and SEO, tailored to elevate your brand."
+      />
+      <meta
+          name="keywords"
+          content="digital services, web development, graphic design, SEO, Connect Agency"
+      />
+      <meta property="og:title" content="Our Services - Connect Agency" />
+      <meta
+          property="og:description"
+          content="Explore our range of services designed to enhance your online presence and help your business grow."
+      />
+      <meta property="og:image" content="https://connectagency.vercel.app/path/to/your/image.jpg" />
+      <meta property="og:type" content="website" />
+      <meta property="og:url" content="https://connectagency.vercel.app/services" />
+      <meta property="og:site_name" content="Connect Agency" />
+      <meta name="twitter:card" content="summary_large_image" />
+      <meta name="twitter:title" content="Our Services - Connect Agency" />
+      <meta
+          name="twitter:description"
+          content="Join us at Connect Agency for outstanding digital services that elevate your brand."
+      />
+      <meta name="twitter:image" content="https://connectagency.vercel.app/path/to/your/image.jpg" />
+      <link rel="canonical" href="https://connectagency.vercel.app/services" />
+  </Helmet>
+    )}
     <section className="py-12 md:py-24 bg-neutral-100 ">
     <div className="container mx-auto px-4">
       <div className="mb-12 md:mb-24 text-center max-w-6xl mx-auto">
-        <h2 className="mb-16 font-semibold text-4xl sm:text-4xl xl:text-7xl font-heading">
-          <span>
-            Join <span className="text-violet-400">Connect Agency</span>, and
-            change
-          </span>
-          <span className="bg-orange-200 rounded-lg px-4 mt-1 inline-block">
-            the future.
-          </span>
-        </h2>
+        
+              <h2 className="mb-16 font-semibold text-4xl sm:text-4xl xl:text-7xl font-heading">
+                <span>
+                  Join <span className="text-violet-400">Connect Agency</span>, and
+                </span>
+                <span className="bg-orange-200 rounded-lg px-4 mt-1 inline-block">
+                  change
+                </span>
+                <span>
+                  the future.
+                </span>
+              </h2>
         <p className="font-semibold text-4xl text-neutral-600 tracking-tight">
           Your journey to digital excellence starts here.
         </p>

@@ -5,6 +5,8 @@ import {
   BellRing, Download, MapPin, ShoppingCart, Layout, 
   Loader
 } from 'lucide-react';
+import ScrollToTop from '../Hooks/scrollToUp';
+import { Helmet } from 'react-helmet';
 
 const features = {
   marketing: [
@@ -111,9 +113,42 @@ const features = {
   ],
 };
 
+const currentPage = 'features'; 
 const AppFeatures = () => (
-  <div className="p-8 max-w-7xl mx-auto">
-    <h1 className="text-3xl font-bold text-center mb-8 text-gray-800">Features</h1>
+  <ScrollToTop>
+     {currentPage == 'features' && (
+      <Helmet>
+      <title>Features - Connect Agency</title>
+      <meta
+        name="description"
+        content="Explore the unique features of Connect Agency that set us apart in web development, graphic design, and SEO."
+      />
+      <meta
+        name="keywords"
+        content="features, web development, graphic design, SEO, Connect Agency"
+      />
+      <meta property="og:title" content="Features - Connect Agency" />
+      <meta
+        property="og:description"
+        content="Discover the exceptional features that make Connect Agency your go-to partner for digital solutions."
+      />
+      <meta property="og:image" content="https://connectagency.vercel.app/path/to/your/image.jpg" />
+      <meta property="og:type" content="website" />
+      <meta property="og:url" content="https://connectagency.vercel.app/features" />
+      <meta property="og:site_name" content="Connect Agency" />
+      <meta name="twitter:card" content="summary_large_image" />
+      <meta name="twitter:title" content="Features - Connect Agency" />
+      <meta
+        name="twitter:description"
+        content="Uncover the standout features of Connect Agency that can elevate your brand."
+      />
+      <meta name="twitter:image" content="https://connectagency.vercel.app/path/to/your/image.jpg" />
+      <link rel="canonical" href="https://connectagency.vercel.app/features" />
+    </Helmet>
+    )}
+
+    <div className="p-8 max-w-7xl mx-auto">
+    <h2 className="text-3xl font-bold text-center mb-8 text-gray-800">Features</h2>
     
    
 
@@ -165,6 +200,7 @@ const AppFeatures = () => (
       </div>
     </div>
   </div>
+  </ScrollToTop>
 );
 
 export default AppFeatures;

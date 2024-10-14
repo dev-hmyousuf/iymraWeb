@@ -6,9 +6,42 @@ import placeholder from '../assets/abouts/placeholder-logo1.png'
 import Team from './Team'
 import About from './About'
 import ScrollToTop from '../Hooks/scrollToUp'
+import { Helmet } from 'react-helmet'
+const currentPage = 'about'; 
 const Abouts = () => {
   return (
     <ScrollToTop>
+       {currentPage == 'about' && (
+     <Helmet>
+     <title>About Us - Connect Agency</title>
+     <meta
+       name="description"
+       content="Learn about Connect Agency, a digital services provider specializing in web development, graphic design, and SEO. Discover our mission, values, and the team behind our success."
+     />
+     <meta
+       name="keywords"
+       content="about, Connect Agency, digital services, web development, graphic design, SEO, mission, team"
+     />
+     <meta property="og:title" content="About Us - Connect Agency" />
+     <meta
+       property="og:description"
+       content="Get to know Connect Agency, a dedicated team focused on delivering exceptional digital solutions to elevate your brand."
+     />
+     <meta property="og:image" content="https://connectagency.vercel.app/path/to/your/image.jpg" />
+     <meta property="og:type" content="website" />
+     <meta property="og:url" content="https://connectagency.vercel.app/about" />
+     <meta property="og:site_name" content="Connect Agency" />
+     <meta name="twitter:card" content="summary_large_image" />
+     <meta name="twitter:title" content="About Us - Connect Agency" />
+     <meta
+       name="twitter:description"
+       content="Discover the story behind Connect Agency and our commitment to providing outstanding digital services."
+     />
+     <meta name="twitter:image" content="https://connectagency.vercel.app/path/to/your/image.jpg" />
+     <link rel="canonical" href="https://connectagency.vercel.app/about" />
+   </Helmet>
+    )}
+
       <section className="py-4">
         <div className="container px-4 mx-auto">
           {/* this is about component */}

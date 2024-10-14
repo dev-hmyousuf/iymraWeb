@@ -1,6 +1,7 @@
 import React, { useRef } from 'react';
 import './scrollbar.css'; // Import custom CSS for the scrollbar
 import ScrollToTop from '../Hooks/scrollToUp';
+import { Helmet } from 'react-helmet';
 
 const Testimonial = () => {
   const scrollRef = useRef(null);
@@ -64,9 +65,39 @@ const Testimonial = () => {
   const scrollRight = () => {
     scrollRef.current.scrollBy({ left: 300, behavior: 'smooth' });
   };
-
+  const currentPage = 'testominial'
   return (
     <ScrollToTop>
+       {currentPage == 'testominial' && (
+       <Helmet>
+       <title>Testimonials - Connect Agency</title>
+       <meta
+         name="description"
+         content="Read testimonials from our satisfied clients at Connect Agency. Discover how our digital services in web development, graphic design, and SEO have transformed businesses."
+       />
+       <meta
+         name="keywords"
+         content="testimonials, client feedback, Connect Agency, digital services, web development, graphic design, SEO, client success stories"
+       />
+       <meta property="og:title" content="Testimonials - Connect Agency" />
+       <meta
+         property="og:description"
+         content="Discover success stories from our clients and how Connect Agency has made a difference in their businesses."
+       />
+       <meta property="og:image" content="https://connectagency.vercel.app/path/to/your/image.jpg" />
+       <meta property="og:type" content="website" />
+       <meta property="og:url" content="https://connectagency.vercel.app/testimonials" />
+       <meta property="og:site_name" content="Connect Agency" />
+       <meta name="twitter:card" content="summary_large_image" />
+       <meta name="twitter:title" content="Testimonials - Connect Agency" />
+       <meta
+         name="twitter:description"
+         content="Read how Connect Agency's exceptional digital services have benefited our clients."
+       />
+       <meta name="twitter:image" content="https://connectagency.vercel.app/path/to/your/image.jpg" />
+       <link rel="canonical" href="https://connectagency.vercel.app/testimonials" />
+     </Helmet>
+    )}
       <div className="max-w-7xl mx-auto mt-20">
         <div className="max-w-xl mb-24 mx-auto text-center">
           <span className="inline-block py-1 px-3 mb-4 text-xs font-semibold text-orange-900 bg-orange-50 rounded-full">TESTIMONIALS</span>
