@@ -88,7 +88,7 @@ const Contact = () => {
                 Get connected to grow better business.
               </h2>
             </div>
-            <div className="block">
+            <div className="w-[90%]">
               <p className="mb-4 text-sm text-gray-400 font-bold uppercase tracking-px">
                 Email
               </p>

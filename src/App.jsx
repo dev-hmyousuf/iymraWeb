@@ -10,7 +10,7 @@ import Contact from "./Components/Contact.jsx";
 import Testimonial from "./Components/Testimonial.jsx";
 import FAQ from "./Components/FAQ.jsx";
 import Abouts from "./Components/Abouts.jsx";
-import Loader from "./Components/Team/Loader.jsx";
+import Loader from "./Components/Loader/Loader.jsx";
 import AOS from "aos"; 
 import "aos/dist/aos.css";
 // dynamic team imports
@@ -51,6 +51,7 @@ function App() {
             <Route path="/team" element={<Team />} />
             <Route path="/about" element={<Abouts />} />
             <Route path="*" element={<NotFound />} />
+            <Route path="/dev/test/loader" element={<Loader />} />
 
              {/* Team overview page */}
           <Route path="/team" element={<Team />} />

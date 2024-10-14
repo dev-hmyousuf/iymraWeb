@@ -1,51 +1,62 @@
 import React, { useState } from 'react';
 import ProjectCard from './ProjectCard';
 
-const allProjects = {
+export const project = {
   ourProject: [
     {
       title: "কুরআনুল কারীম",
-      image: ' https://i.postimg.cc/rmm2bfVY/Screenshot-2024-09-27-203711.png ',
-      technologies: ["React Js", "Tailwind CSS"],
-      description:  "This project is a digital Quran platform with easy navigation for reading and understanding the Quran in an interactive and user-friendly interface.",
-      liveLink:"https://the-islamic-bd.vercel.app/",
-      codeLink:"https://github.com/dev-hmyousuf/the_islamic_bd",
+      image: 'https://i.postimg.cc/rmm2bfVY/Screenshot-2024-09-27-203711.png',
+      technologies: [
+        { name: "React Js" },
+        { name: "Tailwind CSS" }
+      ],
+      description: "This project is a digital Quran platform with easy navigation for reading and understanding the Quran in an interactive and user-friendly interface.",
+      liveLink: "https://the-islamic-bd.vercel.app/",
+      codeLink: "https://github.com/dev-hmyousuf/the_islamic_bd",
     },
     {
-      title: "Expense Tracker"  ,
-      image: "https://i.postimg.cc/3RzPSGzc/Screenshot-2024-09-30-000257.png ",
-      technologies: ["React Js","FireBase","Tailwind Css"],
-      description:   " The Expense Tracker is a simple and user-friendly application that allows users to easily track their daily expenses.  ",
-      liveLink: "https://expense-tracker-one-pink-15.vercel.app/ " ,
-      codeLink:" https://github.com/coderBelal/Expense-Tracker/tree/main"  ,
+      title: "Expense Tracker",
+      image: "https://i.postimg.cc/3RzPSGzc/Screenshot-2024-09-30-000257.png",
+      technologies: [
+        { name: "React Js" },
+        { name: "FireBase" },
+        { name: "Tailwind CSS" }
+      ],
+      description: "The Expense Tracker is a simple and user-friendly application that allows users to easily track their daily expenses.",
+      liveLink: "https://expense-tracker-one-pink-15.vercel.app/",
+      codeLink: "https://github.com/coderBelal/Expense-Tracker/tree/main",
     },
     {
-      title: "Clinic"  ,
-      image: " https://i.postimg.cc/KzBMrmjC/Screenshot-2024-10-07-122503.png ",
-      technologies: ["React Js", "Tailwind Css"],
-      description:   "   This clinic website was designed to provide a seamless user experience, offering all essential services and information in an organized and professional manner. ",
-      liveLink: " https://clinic-two-umber.vercel.app/ " ,
-      codeLink:"  https://github.com/coderBelal/Clinic"  ,
+      title: "Clinic",
+      image: "https://i.postimg.cc/KzBMrmjC/Screenshot-2024-10-07-122503.png",
+      technologies: [
+        { name: "React Js" },
+        { name: "Tailwind CSS" }
+      ],
+      description: "This clinic website was designed to provide a seamless user experience, offering all essential services and information in an organized and professional manner.",
+      liveLink: "https://clinic-two-umber.vercel.app/",
+      codeLink: "https://github.com/coderBelal/Clinic",
     },
-   
   ],
   client: [
     {
       title: 'Spaajman',
-      image: ' https://i.postimg.cc/dQyM7WyP/Screenshot-2024-09-30-000210.png',
-      technologies: ['Node.js','React Js' ,'Express', 'MongoDB'],
+      image: 'https://i.postimg.cc/dQyM7WyP/Screenshot-2024-09-30-000210.png',
+      technologies: [
+        { name: "Node.js" },
+        { name: "React Js" },
+        { name: "Express.js" },
+        { name: "MongoDB" }
+      ],
       description: 'A luxury spa and wellness service platform that offers a range of treatments and booking features, designed with modern web technologies.',
       liveLink: 'https://sparlax.com/',
- 
     },
-  
-    
- 
   ],
 };
 
+
 const ProjectSection = () => {
-  const [selectedCategory, setSelectedCategory] = useState('ourProject');
+  const [selectedCategory, setSelectedCategory] = useState('client');
 
   const handleCategoryChange = (category) => {
     setSelectedCategory(category);
@@ -54,7 +65,7 @@ const ProjectSection = () => {
   return (
     <section className="py-12 bg-gray-100">
       <div className="container mx-auto px-4">
-        <h2 className="text-3xl font-semibold text-center mb-8">My Projects</h2>
+        <h2 className="text-3xl font-semibold text-center mb-8">Our Projects</h2>
         <div className="flex justify-center mb-8">
           <button
             onClick={() => handleCategoryChange('ourProject')}
@@ -70,7 +81,7 @@ const ProjectSection = () => {
           </button>
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-          {allProjects[selectedCategory].map((project, index) => (
+          {project[selectedCategory].map((project, index) => (
             <ProjectCard key={index} project={project} />
           ))}
         </div>

@@ -154,7 +154,7 @@ export default function Heros() {
               heights.
             </motion.p>
             <motion.div
-              className="flex flex-col space-y-4 sm:flex-row sm:space-x-4 sm:space-y-0"
+              className="flex gap-3 sm:flex-row sm:space-x-4 sm:space-y-0"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.4 }}
@@ -162,7 +162,7 @@ export default function Heros() {
               <Button
                 variant="default"
                 size="lg"
-                className="bg-white text-blue-600 hover:bg-blue-100"
+                className="bg-white w-60 text-blue-600 hover:bg-blue-100"
                 onClick={scrollToAbout}
               >
                 Get Started
@@ -171,7 +171,7 @@ export default function Heros() {
               <Button
                 variant="outline"
                 size="lg"
-                className="border-blue-600   hover:bg-white text-blue-600"
+                className="border-blue-600 w-60 hover:bg-white text-blue-600"
               >
                 View Our Services
               </Button>
@@ -179,7 +179,7 @@ export default function Heros() {
 
             </motion.div>
           </div>
-          <div className="hidden lg:flex lg:items-center lg:justify-center">
+          <div className="mx-auto flex lg:items-center lg:justify-center">
             <Tabs
               defaultValue="development"
               className="w-full max-w-md"

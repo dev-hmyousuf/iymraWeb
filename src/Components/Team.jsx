@@ -59,16 +59,16 @@ const Team = () => {
               const slug = image.name.replace(/\s+/g, '-'); // Dynamic slug creation
 
               return (
-                <div key={index} className="w-full md:w-1/2 lg:w-1/4 p-4">
-                  <div className="flex flex-col justify-between px-8 pt-10 pb-12 h-full text-center bg-white rounded-3xl">
+                <div key={index} className="w-full md:w-1/2 lg:w-1/4 p-2">
+                  <div className="flex flex-col justify-between px-8 pt-10 h-full text-center bg-white rounded-3xl">
                     <div className="flex-initial mb-8">
-                      <Link to={`/team/${slug}`}>
+                      <div>
                         <img
                           className="cursor-pointer max-h-60 mb-8 mx-auto rounded-3xl"
                           src={image.src}
                           alt={image.name}
                         />
-                      </Link>
+                      </div>
                       <h3 className="text-xl font-semibold text-gray-900">{image.name}</h3>
                       <p className="text-gray-600">{image.role}</p>
                     </div>
@@ -94,6 +94,9 @@ const Team = () => {
                         </a>
                       )}
                     </div>
+                    <Link to={`/team/${slug}`} className="button mt-2 rounded-t-lg text-white cursor-pointer p-2 w-full flex items-center justify-center bg-indigo-600">
+                      View Details
+                    </Link>
                   </div>
                 </div>
               );
