@@ -10,7 +10,7 @@ Currently, two official plugins are available:
   
   
 ### Installation
-
+ 
 1. **For the Code editor theme**:
 
    ```bash
