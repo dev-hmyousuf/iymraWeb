@@ -1,5 +1,5 @@
-import { useState } from 'react';
-import logo from '../assets/logo/connct_logo_nav.png';
+import { useEffect, useState } from 'react';
+import logo from '../assets/logo_new/navbar.png';
 import { Link } from 'react-router-dom';
 
 const Navbar = () => {
@@ -7,12 +7,31 @@ const Navbar = () => {
   const handleClick = () => {
     setOpen(!Open);
   };
+  const [scrollClass, setScrollClass] = useState("");
 
+  // Function to handle scroll and update class
+  const handleScroll = () => {
+    const scrollY = window.scrollY; // Gets current vertical scroll position
+    if (scrollY > 500) { // Add condition to check when to apply the class
+      setScrollClass("md:w-3/4 w-[90%] mx-auto rounded-xl fixed top-4");
+    } else {
+      setScrollClass(""); // Remove class when scrolled back to top
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll); // Add scroll event listener
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll); // Clean up event listener on component unmount
+    };
+  }, []);
   return (
+    
     <div className='bg-transparent'>
-      <nav className='flex justify-between items-center px-5 py-3 z-[9999]'>
+      <nav className={`flex  justify-between items-center px-5 py-3 z-[9999] ${scrollClass}`}>
         <div className="logo">
-          <img src={logo} alt="" />
+          <img className='max-w-[10rem]' src={logo} alt="" />
         </div>
         <ul className={`md:flex w-full md:w-auto ${Open ? 'open' : ''}`}>
           <li className='hover:bg-gray-100 font-bold p-3 rounded-md'>

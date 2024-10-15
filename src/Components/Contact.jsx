@@ -40,34 +40,49 @@ const Contact = () => {
   return (
     <ScrollToTop>
        {currentPage == 'contact' && (
-        <Helmet>
-        <title>Contact Us - Connect Agency</title>
-        <meta
-          name="description"
-          content="Get in touch with Connect Agency. We are here to assist you with your web development, graphic design, and SEO needs. Fill out our contact form or reach us through our social media channels."
-        />
-        <meta
-          name="keywords"
-          content="contact, Connect Agency, web development, graphic design, SEO, customer support, inquiries"
-        />
-        <meta property="og:title" content="Contact Us - Connect Agency" />
-        <meta
-          property="og:description"
-          content="Reach out to Connect Agency for any inquiries regarding our digital services. We are here to help you succeed."
-        />
-        <meta property="og:image" content="https://connectagency.vercel.app/path/to/your/image.jpg" />
-        <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://connectagency.vercel.app/contact" />
-        <meta property="og:site_name" content="Connect Agency" />
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Contact Us - Connect Agency" />
-        <meta
-          name="twitter:description"
-          content="Contact Connect Agency for all your digital service needs. We're excited to hear from you!"
-        />
-        <meta name="twitter:image" content="https://connectagency.vercel.app/path/to/your/image.jpg" />
-        <link rel="canonical" href="https://connectagency.vercel.app/contact" />
-      </Helmet>
+ <Helmet>
+ <meta name="title" content="Connect Agency - Connect the Beauties" />
+{/* Meta Description */}
+<meta name="description" content="Connect Agency offers exceptional digital services, specializing in graphic design, SEO, and web development to elevate your brand." />
+
+{/* Author Info */}
+<meta name="author" content="H.M. Yousuf, Belal Uddin" />
+
+{/* Open Graph Tags for Social Sharing */}
+<meta property="og:title" content="Connect Agency | Connect the Beauties" />
+<meta property="og:description" content="Explore our services in web development, graphic design, and SEO. Let's connect and enhance your online presence." />
+<meta property="og:image" content="https://connectagency.vercel.app/path/to/your/image.jpg" />
+<meta property="og:url" content="https://connectagency.vercel.app" />
+<meta property="og:type" content="website" />
+
+{/* Twitter Card for Social Sharing */}
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Connect Agency | Connect the Beauties" />
+<meta name="twitter:description" content="Join us at Connect Agency for exceptional digital services tailored to your needs." />
+<meta name="twitter:image" content="https://connectagency.vercel.app/path/to/your/image.jpg" />
+
+{/* Additional SEO Features */}
+<link rel="canonical" href="https://connectagency.vercel.app" />
+<meta name="robots" content="index, follow" />
+<meta name="google-site-verification" content="YOUR_GOOGLE_VERIFICATION_CODE_HERE" />
+
+{/* Schema.org Markup for Google+ */}
+<script type="application/ld+json">
+  {`
+    {
+      "@context": "http://schema.org",
+      "@type": "WebSite",
+      "name": "Connect Agency | Connect the Beauties",
+      "url": "https://connectagency.vercel.app",
+      "description": "Your description of the website's services and purpose.",
+      "author": {
+        "@type": "Person",
+        "name": "H.M. Yousuf",
+      }
+    }
+  `}
+</script>
+</Helmet>
 
     )}
       <section className="relative py-36 bg-gray-50 overflow-hidden">

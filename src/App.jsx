@@ -38,8 +38,6 @@ function App() {
       ) : (
         <div>
           <Navbar />
-          <br />
-          <br />
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/abouts" element={<About />} />
