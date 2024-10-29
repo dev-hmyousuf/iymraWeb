@@ -29,6 +29,9 @@ const TeamData = [
         github: 'https://github.com/HasanMt12',
         fb: 'https://www.facebook.com/Artisanhassan0',
     },
+    /* delete niggas , who is commited to work for we , but they don't
+
+    
     {
         src: 'https://i.postimg.cc/W4MLQNC2/456292134-7519270591507810-8825500480806735559-n.jpg',
         description : "",
@@ -90,6 +93,7 @@ const TeamData = [
         github: '',
         fb: 'https://www.facebook.com/ashraful782',
     },
+    */
 ];
 
 export default TeamData;
