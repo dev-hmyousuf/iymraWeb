@@ -17,6 +17,7 @@ import "aos/dist/aos.css";
 import Team from './Components/Team.jsx'; 
 import TeamMember from './Components/Team/TeamMember.jsx'; 
 import NotFound from "./Components/NotFound.jsx";
+import Insights from "./Components/Insights.jsx";
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -50,6 +51,7 @@ function App() {
             <Route path="/about" element={<Abouts />} />
             <Route path="*" element={<NotFound />} />
             <Route path="/dev/test/loader" element={<Loader />} />
+            <Route path="/insights" element={<Insights />} />
             <Route path="/sitemap" element={<Navigate to="/sitemap.xml" replace />} />
 
              {/* Team overview page */}
