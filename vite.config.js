@@ -10,9 +10,5 @@ export default defineConfig({
       "@": path.resolve(__dirname, "./src"), // Define the alias for "@/"" to point to the "./src" directory
     },
   },
-  build: {
-    rollupOptions: {
-      external: ['framer-motion'], // Optional: Add if you want to externalize it
-    },
-  },
+  
 });
