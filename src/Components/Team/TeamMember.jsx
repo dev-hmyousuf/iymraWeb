@@ -1,10 +1,9 @@
 import { useParams } from 'react-router-dom';
-import { Helmet } from 'react-helmet';
 import ScrollToTop from '../../Hooks/scrollToUp';
 import TeamData from '../../assets/team_pic/team'; // Adjust the path as necessary
-import { FaLinkedin, FaFacebook, FaGithub, FaGlobe } from 'react-icons/fa'; 
+import { FaLinkedin, FaGithub, FaGlobe } from 'react-icons/fa'; 
 import NotFound from '../NotFound';
-import { FaTwitter, FaX } from 'react-icons/fa6';
+import { FaTwitter } from 'react-icons/fa6';
 
 
 const TeamMember = () => {
@@ -32,60 +31,7 @@ const TeamMember = () => {
 
   return (
     <ScrollToTop>
-     <Helmet>
-    <title>{member.name} - {member.role} of Connect Agency</title>
-    <meta
-        name="description"
-        content={member.description || `${member.name} is ${member.role} at Connect Agency.`}
-    />
-    <meta
-        name="keywords"
-        content={`${member.name}, Connect Agency, ${member.role}, web development, graphic design, SEO services`}
-    />
-    <meta property="og:title" content={`${member.name} - ${member.role}`} />
-    <meta
-        property="og:description"
-        content={member.description || `${member.name} is the ${member.role} at Connect Agency.`}
-    />
-    <meta property="og:image" content={member.src} />
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content={`https://iymralabs.com/team/${member.name}`} />
-    <meta property="og:site_name" content="Connect Agency" />
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content={`${member.name} - ${member.role}`} />
-    <meta
-        name="twitter:description"
-        content={member.description || `${member.name} is the ${member.role} at Connect Agency.`}
-    />
-    <meta name="twitter:image" content={member.src} />
-    
-    {/* Canonical Link */}
-    <link rel="canonical" href={`https://connectagency.vercel.app/team/${member.name}`} />
-    
-    <script type="application/ld+json">
-        {`
-            {
-                "@context": "https://schema.org",
-                "@type": "Person",
-                "name": "${member.name}",
-                "jobTitle": "${member.role}",
-                "image": "${member.src}",
-                "url": "https://iymralabs.com/team/${member.name}",
-                "sameAs": [
-                    "${member.link || ''}",
-                    "${member.fb || ''}",
-                    "${member.github || ''}",
-                    "${member.portfolio || ''}"
-                ],
-                "worksFor": {
-                    "@type": "Organization",
-                    "name": "Connect Agency",
-                    "url": "https://iymralabs.com"
-                }
-            }
-        `}
-    </script>
-    </Helmet>
+  
 
 
       <section className="py-36 bg-blueGray-50 overflow-hidden p-10">
