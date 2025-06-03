@@ -20,7 +20,7 @@ const JoinUs = () => {
             Join our <span className='text-white bg-orange-300 px-2 rounded-se-2xl'>team</span>
           </h2>
           <p className="text-gray-600 text-center text-lg">
-          Join Connect Agency and be part of a dynamic team where creativity meets innovation. We're looking for passionate professionals in web development, graphic design, and SEO to help us deliver exceptional results. Elevate your career with us and work on exciting projects that make a difference.
+          Join Iymra Labs and be part of a dynamic team where creativity meets innovation. We're looking for passionate professionals in web development, graphic design, and SEO to help us deliver exceptional results. Elevate your career with us and work on exciting projects that make a difference.
           </p>
         </div>
         <div className="max-w-3xl mx-auto">

@@ -1,17 +1,18 @@
 import { Link } from 'react-router-dom'
-import logo from '../assets/logo/connct_logo_nav.png'
+import logo from '../assets/logo/iymra.png'
 const Footer = () => {
   return (
     <footer className="bg-white">
   <div className="mx-auto max-w-screen-xl space-y-8 px-4 py-5 sm:px-6 lg:space-y-12 lg:px-8">
     <div className="sm:flex sm:items-center sm:justify-between">
-      <div className="text-teal-600">
-        <img src={logo} alt="" />
-      </div>
+    <div className="logo flex items-center">
+            <img className='max-w-[3rem]' src={logo} alt="" />
+            <p className='text-2xl font-bold'>IYMRA</p>
+          </div>
       <ul className="mt-8 flex justify-start gap-6 sm:mt-0 sm:justify-end">
         <li>
           <a
-            href="https://www.facebook.com/webagency.connect"
+            href="https://www.facebook.com/iymralabs"
             rel="noreferrer"
             target="_blank"
             className="text-gray-700 transition hover:opacity-75"
@@ -55,7 +56,7 @@ const Footer = () => {
         </li>
         <li>
           <a
-            href="https://x.com/ConnectAgency_0"
+            href="https://x.com/iymra_labs"
             rel="noreferrer"
             target="_blank"
             className="text-gray-700 transition hover:opacity-75"
@@ -223,7 +224,7 @@ const Footer = () => {
       </div>
     </div>
     <p className="text-xs text-gray-500">
-      © 2024. Connect Agency. All rights reserved.
+      © 2025. Iymra Labs. All rights reserved.
     </p>
   </div>
 </footer>

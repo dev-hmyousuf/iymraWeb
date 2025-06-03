@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import logo from '../assets/logo_new/navbar.png';
+import logo from '../assets/logo/iymra.png';
 import { Link } from 'react-router-dom';
 
 const Navbar = () => {
@@ -29,9 +29,10 @@ const Navbar = () => {
   return (
     
     <div className='bg-transparent'>
-      <nav className={`flex  justify-between items-center px-5 py-3 z-[9999] ${scrollClass}`}>
-        <div className="logo">
-          <img className='max-w-[10rem]' src={logo} alt="" />
+      <nav className={`flex justify-between items-center px-5 py-3 z-[9999] ${scrollClass}`}>
+        <div className="logo flex items-center justify-center">
+          <img className='max-w-[3rem]' src={logo} alt="" />
+          <p className='text-2xl font-bold'>IYMRA</p>
         </div>
         <ul className={`md:flex w-full md:w-auto ${Open ? 'open' : ''}`}>
           <li className='hover:bg-gray-100 font-bold p-3 rounded-md'>
@@ -44,7 +45,7 @@ const Navbar = () => {
             <Link to={'/about'}>About</Link>
           </li>
           <li className='hover:bg-gray-100 font-bold p-3 rounded-md'>
-            <Link to={'/services'}>Services</Link>
+            <Link to={'/services'}>Products</Link>
           </li>
           <li className='hover:bg-gray-100 font-bold p-3 rounded-md'>
             <Link to={'/feature'}>Features</Link>

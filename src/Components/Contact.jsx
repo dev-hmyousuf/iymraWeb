@@ -4,7 +4,6 @@ import emailjs from '@emailjs/browser';
 import { ToastContainer, toast } from 'react-toastify';
   import 'react-toastify/dist/ReactToastify.css';
 import ScrollToTop from '../Hooks/scrollToUp';
-import { Helmet } from 'react-helmet';
 const Contact = () => {
 
   const form = useRef();
@@ -36,55 +35,9 @@ const Contact = () => {
       );
   };
 
-  const currentPage = 'contact'; 
   return (
     <ScrollToTop>
-       {currentPage == 'contact' && (
- <Helmet>
- <meta name="title" content="Connect Agency - Connect the Beauties" />
-{/* Meta Description */}
-<meta name="description" content="Connect Agency offers exceptional digital services, specializing in graphic design, SEO, and web development to elevate your brand." />
-
-{/* Author Info */}
-<meta name="author" content="H.M. Yousuf, Belal Uddin" />
-
-{/* Open Graph Tags for Social Sharing */}
-<meta property="og:title" content="Connect Agency | Connect the Beauties" />
-<meta property="og:description" content="Explore our services in web development, graphic design, and SEO. Let's connect and enhance your online presence." />
-<meta property="og:image" content="https://connectagency.vercel.app/path/to/your/image.jpg" />
-<meta property="og:url" content="https://connectagency.vercel.app" />
-<meta property="og:type" content="website" />
-
-{/* Twitter Card for Social Sharing */}
-<meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:title" content="Connect Agency | Connect the Beauties" />
-<meta name="twitter:description" content="Join us at Connect Agency for exceptional digital services tailored to your needs." />
-<meta name="twitter:image" content="https://connectagency.vercel.app/path/to/your/image.jpg" />
-
-{/* Additional SEO Features */}
-<link rel="canonical" href="https://connectagency.vercel.app" />
-<meta name="robots" content="index, follow" />
-<meta name="google-site-verification" content="YOUR_GOOGLE_VERIFICATION_CODE_HERE" />
-
-{/* Schema.org Markup for Google+ */}
-<script type="application/ld+json">
-  {`
-    {
-      "@context": "http://schema.org",
-      "@type": "WebSite",
-      "name": "Connect Agency | Connect the Beauties",
-      "url": "https://connectagency.vercel.app",
-      "description": "Your description of the website's services and purpose.",
-      "author": {
-        "@type": "Person",
-        "name": "H.M. Yousuf",
-      }
-    }
-  `}
-</script>
-</Helmet>
-
-    )}
+    
       <section className="relative py-36 bg-gray-50 overflow-hidden">
     <img
       className="absolute bottom-0 right-0"
@@ -109,34 +62,13 @@ const Contact = () => {
               </p>
               <ul className="mb-14 flex flex-col gap-1 w-[400px]">
                 <li className="contactEmail px-2 text-xl font-semibold leading-normal text-white bg-violet-600 p-[4px] rounded-lg">
-                  <a href="mailto:webagency.connect@gmail.com">
+                  <a href="mailto:contact@iymralabs.com">
                     <i className="fa-duotone fa-solid fa-envelope pr-2" />{" "}
-                    webagency.connect@gmail.com
+                    contact@iymralabs.com
                   </a>
                 </li>
               </ul>
-              <p className="mb-4 text-sm text-gray-400 font-bold uppercase tracking-px">
-                Phone
-              </p>
-              <ul className="mb-14 flex flex-col gap-1 w-[400px]">
-                   
-                <li className="contactEmail text-xl font-semibold leading-normal text-white bg-violet-600 p-[4px] rounded-lg px-2">
-                  <a href="tell:+8801540192456">
-                  <i className="fa-solid fa-phone"></i>{" "}
-                    +880 1540-192456
-                  </a>
-                </li>
-                <li className="contactEmail text-xl font-semibold leading-normal text-white bg-violet-600 p-[4px] rounded-lg px-2">
-                  <a href="tell:+8801568885065">
-                  <i className="fa-solid fa-phone"></i>{" "}
-                    +880 1568-885065
-                  </a>
-                </li>
-               <p className="mb-4 text-sm text-gray-400 font-bold uppercase tracking-px">Whatsapp</p>
-              <ul className=" flex flex-col gap-1 w-[400px]">
-                <li className="contactEmail px-2 shadow-green-400 shadow-md text-xl font-semibold leading-normal text-green-500 bg-white p-2 rounded-lg"><a target="_blank" href="https://wa.me/message/PRLNCOVF575IA1"> <i className="fa-brands fa-whatsapp text-[#00E676]"></i> Messege on Whatsapp</a></li>
-              </ul>
-              </ul>
+          
             </div>
           </div>
         </div>

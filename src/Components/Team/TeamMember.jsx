@@ -4,6 +4,7 @@ import ScrollToTop from '../../Hooks/scrollToUp';
 import TeamData from '../../assets/team_pic/team'; // Adjust the path as necessary
 import { FaLinkedin, FaFacebook, FaGithub, FaGlobe } from 'react-icons/fa'; 
 import NotFound from '../NotFound';
+import { FaTwitter, FaX } from 'react-icons/fa6';
 
 
 const TeamMember = () => {
@@ -48,7 +49,7 @@ const TeamMember = () => {
     />
     <meta property="og:image" content={member.src} />
     <meta property="og:type" content="website" />
-    <meta property="og:url" content={`https://yourwebsite.com/team/${member.name}`} />
+    <meta property="og:url" content={`https://iymralabs.com/team/${member.name}`} />
     <meta property="og:site_name" content="Connect Agency" />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content={`${member.name} - ${member.role}`} />
@@ -69,7 +70,7 @@ const TeamMember = () => {
                 "name": "${member.name}",
                 "jobTitle": "${member.role}",
                 "image": "${member.src}",
-                "url": "https://yourwebsite.com/team/${member.name}",
+                "url": "https://iymralabs.com/team/${member.name}",
                 "sameAs": [
                     "${member.link || ''}",
                     "${member.fb || ''}",
@@ -79,7 +80,7 @@ const TeamMember = () => {
                 "worksFor": {
                     "@type": "Organization",
                     "name": "Connect Agency",
-                    "url": "https://connect-agency.com"
+                    "url": "https://iymralabs.com"
                 }
             }
         `}
@@ -115,9 +116,9 @@ const TeamMember = () => {
                       <FaGithub size={30} />
                     </a>
                   )}
-                  {member.fb && (
-                    <a href={member.fb} target="_blank" rel="noopener noreferrer">
-                      <FaFacebook size={30} />
+                  {member.x && (
+                    <a href={member.x} target="_blank" rel="noopener noreferrer">
+                      <FaTwitter size={30} />
                     </a>
                   )}
                   {member.portfolio && (
