@@ -1,39 +1,21 @@
 import { useParams } from 'react-router-dom';
 import ScrollToTop from '../../Hooks/scrollToUp';
-import TeamData from '../../assets/team_pic/team'; // Adjust the path as necessary
+import teamData from '../../assets/team_pic/team-data.json'; // JSON import
 import { FaLinkedin, FaGithub, FaGlobe } from 'react-icons/fa'; 
-import NotFound from '../NotFound';
 import { FaTwitter } from 'react-icons/fa6';
-
+import NotFound from '../NotFound';
 
 const TeamMember = () => {
   const { name } = useParams();
 
-  if (!name) {
-    return (
-      <div>
-        <h1>Invalid team member URL</h1>
-      </div>
-    );
-  }
+  if (!name) return <h1>Invalid team member URL</h1>;
 
-  const memberName = name.replace(/-/g, ' ');
+  const member = teamData.find((member) => member.slug === name.toLowerCase());
 
-  const member = TeamData.find(
-    (member) => member.name.toLowerCase() === memberName.toLowerCase()
-  );
-
-  if (!member) {
-    return (
-      <NotFound/>
-    );
-  }
+  if (!member) return <NotFound />;
 
   return (
     <ScrollToTop>
-  
-
-
       <section className="py-36 bg-blueGray-50 overflow-hidden p-10">
         <div className="container px-4 mx-auto">
           <div className="flex flex-wrap lg:items-center -m-8 lg:-m-14">
