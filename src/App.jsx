@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { Route, Routes } from "react-router-dom";
+import { Navigate, Route, Routes } from "react-router-dom";
 import Navbar from "./Components/Navbar.jsx";
 import Footer from "./Components/Footer.jsx";
 import Home from "./Home/Home.jsx";
@@ -50,6 +50,7 @@ function App() {
             <Route path="/about" element={<Abouts />} />
             <Route path="*" element={<NotFound />} />
             <Route path="/dev/test/loader" element={<Loader />} />
+            <Route path="/sitemap" element={<Navigate to="/sitemap.xml" replace />} />
 
              {/* Team overview page */}
           <Route path="/team" element={<Team />} />
