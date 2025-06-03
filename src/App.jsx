@@ -54,7 +54,6 @@ function App() {
             <Route path="/dev/test/loader" element={<Loader />} />
             <Route path="/insights" element={<Insights />} />
             <Route path="/analytics" element={<Analytic />} />
-            <Route path="/sitemap" element={<Navigate to="/sitemap.xml" replace />} />
 
              {/* Team overview page */}
           <Route path="/team" element={<Team />} />

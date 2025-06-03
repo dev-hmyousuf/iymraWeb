@@ -1,0 +1,4 @@
+User-agent: *
+Disallow:
+
+Sitemap: https://iymralabs.com/sitemap.xml
