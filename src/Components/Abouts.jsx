@@ -6,6 +6,7 @@ import placeholder from "../assets/abouts/placeholder-logo1.png";
 import Team from "./Team";
 import About from "./About";
 import ScrollToTop from "../Hooks/scrollToUp";
+import { Dragpic } from "./ui/DragPic";
 
 const Abouts = () => {
   return (
@@ -68,6 +69,11 @@ const Abouts = () => {
             </div>
           </div>
 
+          <section className="py-4">
+            <Dragpic />
+          </section>
+
+
           {/* Investors Section (currently hidden) */}
           <h2 className="hidden text-center text-4xl lg:text-5xl mb-9 font-bold font-heading">Our investors</h2>
           <div className="hidden bg-gray-50 rounded-3xl mb-32 flex flex-wrap py-8">
@@ -78,8 +84,7 @@ const Abouts = () => {
             ))}
           </div>
 
-          {/* Team Section */}
-          <Team />
+        
         </div>
       </section>
     </ScrollToTop>

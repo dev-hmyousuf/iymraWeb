@@ -11,13 +11,14 @@ const Navbar = () => {
 
   // Function to handle scroll and update class
   const handleScroll = () => {
-    const scrollY = window.scrollY; // Gets current vertical scroll position
-    if (scrollY > 500) { // Add condition to check when to apply the class
-      setScrollClass("md:w-3/4 w-[90%] mx-auto rounded-xl fixed top-4");
+    const scrollY = window.scrollY;
+    if (scrollY > 500) {
+      setScrollClass("md:w-3/4 w-[90%] mx-auto rounded-xl fixed top-4 bg-white/30 backdrop-blur-md shadow-lg");
     } else {
-      setScrollClass(""); // Remove class when scrolled back to top
+      setScrollClass("");
     }
   };
+  
 
   useEffect(() => {
     window.addEventListener("scroll", handleScroll); // Add scroll event listener

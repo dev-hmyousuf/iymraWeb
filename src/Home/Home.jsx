@@ -2,7 +2,7 @@ import About from "../Components/About";
 import Contact from "../Components/Contact";
 import FAQ from "../Components/FAQ";
 import Feature from "../Components/Feature";
-import Hero from "../Components/Hero";
+import AuroraHero from "../Components/Heros";
 // import JoinUs from "../Components/JoinUs"
 import News from "../Components/News";
 
@@ -16,7 +16,7 @@ const Home = () => {
     <ScrollToTop>
    
        
-      <Hero />
+      <AuroraHero />
       <About />
 
       {/* <ProjectSection /> */}

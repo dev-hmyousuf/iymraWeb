@@ -5,6 +5,7 @@ import web from "../assets/services/web_pic.png";
 import app from "../assets/services/app_pic.png";
 import ads from "../assets/services/ads_run.png";
 import ScrollToTop from "../Hooks/scrollToUp";
+import EncryptButton from "./ui/EncryptButton";
 
 const Services = () => {
   return (
@@ -36,14 +37,18 @@ const Services = () => {
                       Iymra App
                     </h4>
                     <p className="font-medium text-lg text-neutral-600 tracking-tight max-w-xl">
-                      Create, connect, verify, and search across all your knowledge
-                      platforms in one centralized, secure place — accelerating
-                      productivity like never before.
+                      Create, connect, verify, and search across all your
+                      knowledge platforms in one centralized, secure place —
+                      accelerating productivity like never before.
                     </p>
                   </div>
                   <div className="flex flex-wrap justify-between items-end -m-8">
                     <div className="w-auto p-8">
-                      <img className="h-auto object-cover" src={web} alt="Iymra App preview" />
+                      <img
+                        className="h-auto object-cover"
+                        src={web}
+                        alt="Iymra App preview"
+                      />
                     </div>
                   </div>
                 </div>
@@ -60,7 +65,11 @@ const Services = () => {
                       Secure and seamless authentication solutions designed for
                       next-gen decentralized apps.
                     </p>
-                    <img className="mx-auto mb-8 h-64 object-cover" src={seo} alt="Iymra Auth visual" />
+                    <img
+                      className="mx-auto mb-8 h-64 object-cover"
+                      src={seo}
+                      alt="Iymra Auth visual"
+                    />
                   </div>
                 </div>
               </div>
@@ -73,19 +82,47 @@ const Services = () => {
                       Iymra Mail
                     </h4>
                     <p className="font-medium text-lg text-neutral-600 tracking-tight max-w-xl">
-                      Manage, verify, and search emails across platforms from one
-                      secure hub — powering your communications effortlessly.
+                      Manage, verify, and search emails across platforms from
+                      one secure hub — powering your communications
+                      effortlessly.
                     </p>
                   </div>
                   <div className="flex flex-wrap justify-between items-end -m-8">
                     <div className="w-auto p-8">
-                      <img className="h-auto object-cover" src={app} alt="Iymra Mail interface" />
+                      <img
+                        className="h-auto object-cover"
+                        src={app}
+                        alt="Iymra Mail interface"
+                      />
                     </div>
                   </div>
                 </div>
               </div>
 
-           
+              {/* Iymra Wallet */}
+              <div className="w-full md:w-1/2 xl:w-4/12 p-2.5">
+                <div className="h-full p-10 bg-white rounded-5xl flex flex-col justify-between">
+                  <div>
+                    <h4 className="mb-2 text-4xl font-medium tracking-tight font-heading">
+                      Iymra Wallet
+                    </h4>
+                    <p className="text-lg text-neutral-700">
+                      Iymra Wallet delivers secure and seamless Web3
+                      experiences, designed to{" "}
+                      <span className="inline-block align-middle ml-1 font-semibold text-indigo-500">
+                      <EncryptButton buttonText="Secure & Encrypt" />
+                      </span>{" "}
+                      your digital assets and empower decentralized control.
+                    </p>
+
+                    <img
+                      className="mx-auto mb-8 h-64 object-cover"
+                      src={seo}
+                      alt="Iymra Auth visual"
+                    />
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>

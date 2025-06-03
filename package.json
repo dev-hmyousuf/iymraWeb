@@ -13,6 +13,8 @@
     "@emailjs/browser": "^4.4.1",
     "@radix-ui/react-slot": "^1.1.0",
     "@radix-ui/react-tabs": "^1.1.1",
+    "@react-three/drei": "^9.48.5",
+    "@react-three/fiber": "^8.13.7",
     "aos": "^2.3.4",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.1.1",
@@ -29,7 +31,8 @@
     "react-toastify": "^10.0.5",
     "slick-carousel": "^1.8.1",
     "tailwind-merge": "^2.5.3",
-    "tailwindcss-animate": "^1.0.7"
+    "tailwindcss-animate": "^1.0.7",
+    "three": "^0.153.0"
   },
   "devDependencies": {
     "@eslint/js": "^9.9.0",

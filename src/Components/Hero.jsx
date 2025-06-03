@@ -114,6 +114,8 @@ const FloatingIcons = () => {
   );
 };
 
+// unchanged imports...
+
 export default function IymraHero() {
   const [activeTab, setActiveTab] = useState("ecosystem");
 
@@ -127,11 +129,12 @@ export default function IymraHero() {
         <FloatingIcons />
       </div>
 
-      <div className="container relative z-10 mx-auto flex min-h-screen items-center px-4 py-16">
-        <div className="grid gap-8 lg:grid-cols-2">
-          <div className="flex flex-col justify-center space-y-8">
+      <div className="container relative z-10 mx-auto flex min-h-screen flex-col justify-center px-4 py-16 lg:flex-row lg:items-center">
+        <div className="grid w-full gap-8 lg:grid-cols-2">
+          {/* Left Side - Text */}
+          <div className="flex flex-col justify-center space-y-6 text-center lg:text-left">
             <motion.h1
-              className="text-4xl font-bold leading-tight text-white sm:text-5xl md:text-6xl"
+              className="text-3xl sm:text-4xl md:text-5xl font-bold leading-tight text-white"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8 }}
@@ -140,8 +143,9 @@ export default function IymraHero() {
               <br />
               The Future of Decentralized Ecosystems.
             </motion.h1>
+
             <motion.p
-              className="max-w-2xl text-xl text-gray-200"
+              className="max-w-xl mx-auto lg:mx-0 text-lg sm:text-xl text-gray-200"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.2 }}
@@ -150,8 +154,9 @@ export default function IymraHero() {
               feeds to mini apps and games — Iymra empowers users with true
               control over their digital life.
             </motion.p>
+
             <motion.div
-              className="flex gap-3 sm:flex-row sm:space-x-4 sm:space-y-0"
+              className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.4 }}
@@ -159,48 +164,42 @@ export default function IymraHero() {
               <Button
                 variant="default"
                 size="lg"
-                className="bg-white w-60 text-blue-700 hover:bg-blue-100"
+                className="bg-white w-full sm:w-52 text-blue-700 hover:bg-blue-100"
                 onClick={scrollToAbout}
               >
                 Explore Iymra
               </Button>
-              <Link to="/products">
+              <Link to="/products" className="w-full sm:w-52">
                 <Button
                   variant="outline"
                   size="lg"
-                  className="border-blue-700 w-60 hover:bg-white text-blue-700"
+                  className="border-blue-700 w-full hover:bg-white text-blue-700"
                 >
                   View Products
                 </Button>
               </Link>
             </motion.div>
           </div>
-          <div className="mx-auto flex lg:items-center lg:justify-center">
+
+          {/* Right Side - Tabs */}
+          <div className="w-full max-w-md mx-auto lg:mx-0">
             <Tabs
               defaultValue="ecosystem"
-              className="w-full max-w-md"
+              className="w-full"
               onValueChange={setActiveTab}
             >
               <TabsList className="grid w-full grid-cols-3 bg-blue-900/30 rounded-lg">
-                <TabsTrigger
-                  className="text-gray-300"
-                  value="ecosystem"
-                >
+                <TabsTrigger className="text-gray-300" value="ecosystem">
                   Ecosystem
                 </TabsTrigger>
-                <TabsTrigger
-                  className="text-gray-300"
-                  value="growth"
-                >
+                <TabsTrigger className="text-gray-300" value="growth">
                   Growth & Feeds
                 </TabsTrigger>
-                <TabsTrigger
-                  className="text-gray-300"
-                  value="products"
-                >
+                <TabsTrigger className="text-gray-300" value="products">
                   Products
                 </TabsTrigger>
               </TabsList>
+
               <AnimatePresence mode="wait">
                 <motion.div
                   key={activeTab}
@@ -209,7 +208,7 @@ export default function IymraHero() {
                   exit={{ opacity: 0, y: -20 }}
                   transition={{ duration: 0.3 }}
                 >
-                  <div className="overflow-y-auto max-h-96">
+                  <div className="overflow-y-auto max-h-[24rem] space-y-4 mt-4">
                     {iymraServices
                       .filter((_, i) => {
                         if (activeTab === "ecosystem") return i < 2 || (i >= 4 && i < 6);
@@ -217,13 +216,15 @@ export default function IymraHero() {
                         if (activeTab === "products") return i >= 6;
                       })
                       .map((service, index) => (
-                        <TabsContent value={activeTab} className="mt-4" key={index}>
+                        <TabsContent value={activeTab} key={index}>
                           <Card>
-                            <CardContent className="flex items-center space-x-4 p-6">
-                              <service.icon className="h-10 w-10 text-blue-500" />
+                            <CardContent className="flex items-start gap-4 p-4 sm:p-6">
+                              <service.icon className="h-8 w-8 sm:h-10 sm:w-10 text-blue-500" />
                               <div>
-                                <h3 className="text-lg font-semibold">{service.title}</h3>
-                                <p className="text-sm text-gray-400">{service.description}</p>
+                                <h3 className="text-base sm:text-lg font-semibold text-gray-600">
+                                  {service.title}
+                                </h3>
+                                <p className="text-sm text-gray-300">{service.description}</p>
                               </div>
                             </CardContent>
                           </Card>
