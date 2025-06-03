@@ -1,6 +1,6 @@
 import { useParams } from 'react-router-dom';
 import ScrollToTop from '../../Hooks/scrollToUp';
-import teamData from '../../assets/team_pic/team-data.json'; // JSON import
+import teamData from '../../assets/team_pic/team.json'; // JSON import
 import { FaLinkedin, FaGithub, FaGlobe } from 'react-icons/fa'; 
 import { FaTwitter } from 'react-icons/fa6';
 import NotFound from '../NotFound';
