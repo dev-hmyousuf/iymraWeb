@@ -19,6 +19,7 @@ const TeamMember = () => {
       <section className="py-36 bg-blueGray-50 overflow-hidden p-10">
         <div className="container px-4 mx-auto">
           <div className="flex flex-wrap lg:items-center -m-8 lg:-m-14">
+            {/* Image Section */}
             <div className="w-full md:w-1/2 p-8 lg:p-14">
               <div className="relative max-w-max mx-auto lg:ml-auto lg:mr-0 overflow-hidden rounded-4xl">
                 <img
@@ -28,10 +29,19 @@ const TeamMember = () => {
                 />
               </div>
             </div>
+
+            {/* Info Section */}
             <div className="w-full md:w-1/2 p-8 lg:p-14">
               <h1 className="text-4xl font-bold mb-4">{member.name}</h1>
-              <p className="text-lg font-medium text-gray-600">{member.role}</p>
-              <div className="mt-8">
+              <p className="text-lg font-medium text-gray-600 mb-4">{member.role}</p>
+
+              {member.description && (
+                <p className="text-base text-gray-700 leading-relaxed mb-8">
+                  {member.description}
+                </p>
+              )}
+
+              <div className="mt-4">
                 <h3 className="text-xl font-bold mb-2">Social Links</h3>
                 <div className="flex space-x-4">
                   {member.link && (
