@@ -36,7 +36,11 @@ const TeamMember = () => {
               <p className="text-lg font-medium text-gray-600 mb-4">{member.role}</p>
 
              
-
+              {member.description && (
+                <p className="text-base text-justify text-gray-700 leading-relaxed mb-8">
+                  {member.description}
+                </p>
+              )}
               <div className="my-4">
                 <h3 className="text-xl font-bold mb-2">Social Links</h3>
                 <div className="flex space-x-4">
@@ -63,11 +67,7 @@ const TeamMember = () => {
                 </div>
               </div>
 
-              {member.description && (
-                <p className="text-base text-justify text-gray-700 leading-relaxed mb-8">
-                  {member.description}
-                </p>
-              )}
+              
             </div>
           </div>
         </div>
