@@ -37,7 +37,7 @@ const TeamMember = () => {
 
              
 
-              <div className="mt-4">
+              <div className="my-4">
                 <h3 className="text-xl font-bold mb-2">Social Links</h3>
                 <div className="flex space-x-4">
                   {member.link && (
