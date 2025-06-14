@@ -19,6 +19,8 @@ import TeamMember from './Components/Team/TeamMember.jsx';
 import NotFound from "./Components/NotFound.jsx";
 import Insights from "./Components/Insights.jsx";
 import Analytic from "./Components/Analytics.jsx";
+import What from "./Components/What.jsx";
+
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -54,6 +56,7 @@ function App() {
             <Route path="/dev/test/loader" element={<Loader />} />
             <Route path="/insights" element={<Insights />} />
             <Route path="/analytics" element={<Analytic />} />
+            <Route path="/what" element={<What />} />
 
              {/* Team overview page */}
           <Route path="/team" element={<Team />} />
