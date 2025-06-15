@@ -31,7 +31,7 @@ const Navbar = () => {
     <div className='bg-transparent'>
       <nav className={`flex justify-between items-center px-5 py-3 z-[9999] ${scrollClass}`}>
         <div className="logo flex items-center justify-center">
-          <Link to='/' onClick={() => setOpen(false)}>
+          <Link to='/' className='logo flex items-center justify-center' onClick={() => setOpen(false)}>
             <img className='max-w-[3rem]' src={logo} alt="IYMRA Logo" />
             <p className='text-2xl font-bold'>IYMRA</p>
           </Link>
