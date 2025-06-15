@@ -350,7 +350,7 @@ export default function Component() {
     52% CAGR Growth Rate
   </p>
 
-  <div className="bg-white rounded-2xl shadow-md p-4 flex flex-col gap-4">
+  <div className="bg-white bg-opacity-20 rounded-2xl shadow-md p-4 flex flex-col gap-4">
     <div className="flex items-center gap-3">
       <Smartphone className="w-5 h-5 text-indigo-600" />
       <span className="text-gray-800 text-base font-medium">
