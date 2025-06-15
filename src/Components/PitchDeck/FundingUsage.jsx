@@ -62,7 +62,7 @@ const investmentHighlights = [
 
 const FundingSection = () => {
   return (
-    <section className="py-24 bg-gray-50">
+    <section id='fundingUsage' className="py-24 bg-gray-50">
       <div className="max-w-6xl mx-auto px-6">
         {/* Header */}
         <motion.div

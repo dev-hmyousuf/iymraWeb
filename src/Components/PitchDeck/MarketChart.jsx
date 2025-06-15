@@ -57,7 +57,7 @@ const AdvancedMarketChart = () => {
   };
 
   return (
-    <section className="py-32 bg-white">
+    <section id="go-to-market" className="py-32 bg-white">
       <div className="container mx-auto px-6">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
