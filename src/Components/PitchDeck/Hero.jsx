@@ -267,11 +267,11 @@ export default function Component() {
                     Privacy-First Web3 Ecosystem
                   </span>
                 </div>
-                <h1 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold text-white leading-[0.9] mb-2">
+                <h1 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold text-gray-700 leading-[0.9] mb-2">
                   Iymra Labs —<br />
                   Pre-Seed Pitch Deck
                 </h1>
-                <p className="text-white/90 text-sm sm:text-base">
+                <p className="text-gray-600 text-sm sm:text-base">
                   Seeking $50k - $100k to build privacy-first Web3 apps for emerging markets
                 </p>
               </motion.div>

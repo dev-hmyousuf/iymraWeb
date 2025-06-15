@@ -32,8 +32,10 @@ const Navbar = () => {
     <div className='bg-transparent'>
       <nav className={`flex justify-between items-center px-5 py-3 z-[9999] ${scrollClass}`}>
         <div className="logo flex items-center justify-center">
+          <Link to={'/'} >
           <img className='max-w-[3rem]' src={logo} alt="" />
           <p className='text-2xl font-bold'>IYMRA</p>
+          </Link>
         </div>
         <ul className={`md:flex w-full md:w-auto ${Open ? 'open' : ''}`}>
           <li className='hover:bg-gray-100 font-bold p-3 rounded-md'>
