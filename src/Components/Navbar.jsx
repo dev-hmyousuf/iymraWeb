@@ -38,25 +38,25 @@ const Navbar = () => {
         </div>
 
         <ul className={`md:flex w-full md:w-auto ${Open ? 'open' : 'hidden'} md:block`}>
-          <li className='hover:bg-gray-100 font-bold p-3 rounded-md'>
+          <li className='hover:bg-gray-100 flex justify-center items-center font-bold p-3 rounded-md'>
             <Link to='/' onClick={() => setOpen(false)}>Home</Link>
           </li>
-          <li className='hover:bg-gray-100 font-bold p-3 rounded-md'>
+          <li className='hover:bg-gray-100 flex justify-center items-center font-bold p-3 rounded-md'>
             <Link to='/team' onClick={() => setOpen(false)}>Team</Link>
           </li>
-          <li className='hover:bg-gray-100 font-bold p-3 rounded-md'>
+          <li className='hover:bg-gray-100 flex justify-center items-center font-bold p-3 rounded-md'>
             <Link to='/about' onClick={() => setOpen(false)}>About</Link>
           </li>
-          <li className='hover:bg-gray-100 font-bold p-3 rounded-md'>
+          <li className='hover:bg-gray-100 flex justify-center items-center font-bold p-3 rounded-md'>
             <Link to='/products' onClick={() => setOpen(false)}>Products</Link>
           </li>
-          <li className='hover:bg-gray-100 font-bold p-3 rounded-md'>
+          <li className='hover:bg-gray-100 flex justify-center items-center font-bold p-3 rounded-md'>
             <Link to='/testimonials' onClick={() => setOpen(false)}>Testimonials</Link>
           </li>
-          <li className='hover:bg-gray-100 font-bold p-3 rounded-md'>
+          <li className='hover:bg-gray-100 flex justify-center items-center font-bold p-3 rounded-md'>
             <Link to='/contact' onClick={() => setOpen(false)}>Contact</Link>
           </li>
-          <li className='text-gray-100 bg-gray-600 font-bold p-3 rounded-md'>
+          <li className='text-gray-100 flex justify-center items-center bg-gray-600 font-bold p-3 rounded-md'>
             <Link to='/what' onClick={() => setOpen(false)}>Invest</Link>
           </li>
         </ul>
