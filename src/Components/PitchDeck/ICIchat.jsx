@@ -1,23 +1,21 @@
 "use client"
 
 import { AnimatePresence, motion } from "framer-motion"
-import { useEffect, useRef, useState } from "react"
 import {
+  AlertCircle,
   ArrowLeft,
-  MoreVertical,
-  Send,
-  Paperclip,
-  Wallet,
+  Check,
   CheckCheck,
   Loader2,
-  X,
-  Check,
-  AlertCircle,
+  MoreVertical,
+  Paperclip,
+  Send,
   Shield,
-  Zap,
-  MessageCircle,
-  Lock,
+  Wallet,
+  X,
+  Zap
 } from "lucide-react"
+import { useEffect, useRef, useState } from "react"
 
 const USER_WALLET = "0xATHEX1234...5678"
 const USER_BALANCE = 1000
@@ -373,7 +371,7 @@ export default function IOSICIChat() {
                                         <div className="bg-blue-50 rounded-2xl p-3 mb-4">
                                           <div className="flex items-center justify-center space-x-2">
                                             <Wallet className="w-4 h-4 text-blue-600" />
-                                            <span className="text-blue-600 font-medium text-sm">ICI Network</span>
+                                            <span className="text-blue-600 font-medium text-sm">ICI</span>
                                           </div>
                                         </div>
                                       </div>
@@ -554,10 +552,10 @@ export default function IOSICIChat() {
                                               </span>
                                             </div>
                                             <div className="flex justify-between items-center">
-                                              <span className="text-slate-600 text-sm">Network</span>
+                                              <span className="text-slate-600 text-sm">Proceed By</span>
                                               <div className="flex items-center space-x-1">
                                                 <Zap className="w-3 h-3 text-blue-600" />
-                                                <span className="text-blue-600 font-medium text-sm">ICI Network</span>
+                                                <span className="text-blue-600 font-medium text-sm">ICI </span>
                                               </div>
                                             </div>
                                           </div>

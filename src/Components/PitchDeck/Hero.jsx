@@ -399,28 +399,29 @@ export default function Component() {
                       <div className="w-1.5 h-1.5 sm:w-2 sm:h-2 bg-white/60 rounded-full"></div>
                       <span className="text-white/90 text-xs sm:text-sm">Development & Engineering</span>
                     </div>
-                    <span className="text-white/80 text-xs sm:text-sm">45%</span>
+                    <span className="text-white/80 text-xs sm:text-sm">43%</span>
                   </div>
-                  <div className="flex items-center justify-between">
-                    <div className="flex items-center gap-2">
-                      <div className="w-1.5 h-1.5 sm:w-2 sm:h-2 bg-white/60 rounded-full"></div>
-                      <span className="text-white/90 text-xs sm:text-sm">Security & Audits</span>
-                    </div>
-                    <span className="text-white/80 text-xs sm:text-sm">20%</span>
-                  </div>
+                 
                   <div className="flex items-center justify-between">
                     <div className="flex items-center gap-2">
                       <div className="w-1.5 h-1.5 sm:w-2 sm:h-2 bg-white/60 rounded-full"></div>
                       <span className="text-white/90 text-xs sm:text-sm">Marketing & Community</span>
                     </div>
-                    <span className="text-white/80 text-xs sm:text-sm">25%</span>
+                    <span className="text-white/80 text-xs sm:text-sm">22%</span>
+                  </div>
+                   <div className="flex items-center justify-between">
+                    <div className="flex items-center gap-2">
+                      <div className="w-1.5 h-1.5 sm:w-2 sm:h-2 bg-white/60 rounded-full"></div>
+                      <span className="text-white/90 text-xs sm:text-sm">Security & Audits</span>
+                    </div>
+                    <span className="text-white/80 text-xs sm:text-sm">18%</span>
                   </div>
                   <div className="flex items-center justify-between">
                     <div className="flex items-center gap-2">
                       <div className="w-1.5 h-1.5 sm:w-2 sm:h-2 bg-white/60 rounded-full"></div>
                       <span className="text-white/90 text-xs sm:text-sm">Operations & Reserve</span>
                     </div>
-                    <span className="text-white/80 text-xs sm:text-sm">10%</span>
+                    <span className="text-white/80 text-xs sm:text-sm">17%</span>
                   </div>
                 </div>
               </div>
