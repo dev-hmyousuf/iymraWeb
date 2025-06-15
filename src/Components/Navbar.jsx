@@ -55,6 +55,9 @@ const Navbar = () => {
           <li className='hover:bg-gray-100 font-bold p-3 rounded-md'>
             <Link to={'/contact'}>Contact</Link>
           </li>
+           <li className=' text-gray-100 bg-blue-600 font-bold p-3 rounded-md'>
+            <Link to={'/what'}>Invest</Link>
+          </li>
         </ul>
         {
           Open ? 
