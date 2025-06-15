@@ -263,7 +263,7 @@ export default function Component() {
                 className="max-w-xs sm:max-w-sm md:max-w-md"
               >
                 <div className="mb-3">
-                  <span className="px-3 py-1 bg-white/20 backdrop-blur-sm rounded-full text-white text-xs sm:text-sm font-medium">
+                  <span className="px-3 py-1 bg-gray-700 backdrop-blur-sm rounded-full text-white text-xs sm:text-sm font-medium">
                     Privacy-First Web3 Ecosystem
                   </span>
                 </div>
