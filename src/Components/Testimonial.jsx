@@ -6,55 +6,7 @@ const Testimonial = () => {
   const scrollRef = useRef(null);
 
   const testimonials = [
-    {
-      name: "Sarah Johnson",
-      role: "Marketing Manager at BrightStar Inc.",
-      text: "Iymra Labs transformed our online presence with their exceptional web development services. Our website now looks modern, is user-friendly, and has seen a significant increase in traffic!",
-      rating: 5,
-      image: "https://th.bing.com/th/id/OIP.CJ_8hB6ZtMjf_zJ0agIz2gHaHa?rs=1&pid=ImgDetMain",
-    },
-    {
-      name: "Michael Lee",
-      role: "Founder of FreshWave",
-      text: "The graphic design team at Iymra Labs exceeded our expectations. They captured our brand's essence perfectly and delivered stunning visuals that have received numerous compliments.",
-      rating: 5,
-      image: "https://th.bing.com/th/id/OIP.uSLJOOyxwbwN2jHjh3f5twHaHa?rs=1&pid=ImgDetMain",
-    },
-    {
-      name: "Emily Davis",
-      role: "CEO of EcoSolutions",
-      text: "Our website's SEO ranking skyrocketed thanks to Iymra Labs. We've gained so many new clients since we started working with them. Highly recommend their SEO services!",
-      rating: 5,
-      image: "https://th.bing.com/th/id/R.a67847a9202cb52965bede2a5db71ca9?rik=RiAbr%2f2qWucmIA&pid=ImgRaw&r=0",
-    },
-    {
-      name: "James Carter",
-      role: "CTO of InnovateX",
-      text: "Working with Iymra Labs was a breeze. They handled our web development project professionally and delivered ahead of schedule. Their attention to detail is commendable.",
-      rating: 5,
-      image: "https://th.bing.com/th/id/R.a2b4cd8ba8815ca43366df493098d952?rik=iXu%2f23CJEVeg3w&pid=ImgRaw&r=0",
-    },
-    {
-      name: "Olivia Brown",
-      role: "Head of Digital Marketing at GreenLeaf",
-      text: "Iymra Labs’s graphic design services are top-notch. They created eye-catching designs that resonate with our audience, significantly improving our brand image.",
-      rating: 5,
-      image: "https://th.bing.com/th/id/OIP.Qtdexk0R56XrV_cB9bYBawHaLX?rs=1&pid=ImgDetMain",
-    },
-    {
-      name: "David Martinez",
-      role: "Owner of Martinez Consulting",
-      text: "The team at Iymra Labs is exceptional. They revamped our website, making it more intuitive and visually appealing. We've received so much positive feedback from our clients!",
-      rating: 5,
-      image: "https://th.bing.com/th/id/OIP.rjMbbAunVaJaaePYu53TzAHaHa?rs=1&pid=ImgDetMain",
-    },
-    {
-      name: "William Harris",
-      role: "Founder of Harris & Co.",
-      text: "I’ve worked with several agencies, but Iymra Labs stands out. Their comprehensive approach to web development, SEO, and design has truly elevated our business.",
-      rating: 5,
-      image: "https://th.bing.com/th/id/OIP.kYIqhVFHyrTGBPC96IO1DAHaHa?rs=1&pid=ImgDetMain",
-    },
+   
   ];
 
   const scrollLeft = () => {
