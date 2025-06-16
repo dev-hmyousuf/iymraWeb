@@ -5,7 +5,7 @@ import "@react-pdf-viewer/core/lib/styles/index.css";
 import "@react-pdf-viewer/default-layout/lib/styles/index.css";
 
 // ✅ Vite handles this perfectly with import
-import whitepaper from "../assets/whitepaper/whitepaperIymra.pdf";
+import whitepaper from "/whitepaper.pdf";
 
 const WhitepaperIymra = () => {
     const defaultLayoutPluginInstance = defaultLayoutPlugin();
