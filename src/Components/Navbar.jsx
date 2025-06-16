@@ -50,9 +50,7 @@ const Navbar = () => {
           <li className='hover:bg-gray-100 flex justify-center items-center font-bold p-3 rounded-md'>
             <Link to='/products' onClick={() => setOpen(false)}>Products</Link>
           </li>
-          <li className='hover:bg-gray-100 flex justify-center items-center font-bold p-3 rounded-md'>
-            <Link to='/testimonials' onClick={() => setOpen(false)}>Testimonials</Link>
-          </li>
+
           <li className='hover:bg-gray-100 flex justify-center items-center font-bold p-3 rounded-md'>
             <Link to='/contact' onClick={() => setOpen(false)}>Contact</Link>
           </li>
