@@ -14,7 +14,7 @@ const WhitepaperIymra = () => {
         <div className="mt-12 min-h-screen bg-white py-8">
             <div className="max-w-6xl mx-auto shadow-xl rounded-2xl overflow-hidden border border-gray-200">
                 <Worker workerUrl="https://unpkg.com/pdfjs-dist@3.11.174/build/pdf.worker.min.js">
-                    <Viewer fileUrl={whitepaper} plugins={[defaultLayoutPluginInstance]} />
+                    <Viewer  fileUrl={whitepaper} plugins={[defaultLayoutPluginInstance]} />
                 </Worker>
             </div>
         </div>
